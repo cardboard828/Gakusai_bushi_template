@@ -1,11 +1,11 @@
 # Fdb version 4
-["dvipdf"] 1735213722.77128 "out/main.dvi" "out/main.pdf" "out/main" 1735213725.44776 0
-  "out/main.dvi" 1735213722.64809 101700 910340612130388dac88bad8fc9a5ec7 "latex"
+["dvipdf"] 1735215668.99788 "out/main.dvi" "out/main.pdf" "out/main" 1735215670.70393 0
+  "out/main.dvi" 1735215668.92597 101700 8950213e4fae62c7be7e6a333ef9c977 "latex"
   (generated)
   "out/main.pdf"
   (rewritten before read)
-["latex"] 1735213720.81037 "/Users/yuichimori/gakusai_bushi/gakusai-bushi/main.tex" "out/main.dvi" "main" 1735213725.44454 0
-  "/Users/yuichimori/gakusai_bushi/gakusai-bushi/main.tex" 1735213718.57527 2434 c37e95201220eb052d18beb8566bcd7c ""
+["latex"] 1735215667.77084 "/Users/yuichimori/gakusai_bushi_template/main.tex" "out/main.dvi" "main" 1735215670.70185 0
+  "/Users/yuichimori/gakusai_bushi_template/main.tex" 1735215666.32015 2330 d14d2ae2f587c0d26a00a9d72aebd8a1 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1463434352 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1463434352 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -236,10 +236,10 @@
   "Mochidsuki:uncertainty/Quantum Measurement and Uncertainty Relations_Shota Mochizuki.tex" 1735211188.26606 31060 d7965120f5c06d58a24b3ac084b4287c ""
   "Mochidsuki:uncertainty/部誌付録_望月.tex" 1735211188.26627 13356 a73d3baf582037b08fb9de3f283b97b5 ""
   "TOC_Part.tex" 1735211188.26871 494 6626837f9c8fb511425f37094119bad7 ""
-  "main.tex" 1735213718.57527 2434 c37e95201220eb052d18beb8566bcd7c ""
-  "out/main.aux" 1735213722.64611 3551 7656de0a6a06fab967b29042a5a6a26a "latex"
-  "out/main.out" 1735213722.64769 401 a6fa863ac00ada4a042636fdbe01eb6c "latex"
-  "out/main.toc" 1735213722.64803 1918 e22fedf488c6f0d91176ea8326a48af1 "latex"
+  "main.tex" 1735215666.32015 2330 d14d2ae2f587c0d26a00a9d72aebd8a1 ""
+  "out/main.aux" 1735215668.92449 3551 7656de0a6a06fab967b29042a5a6a26a "latex"
+  "out/main.out" 1735215668.92566 401 a6fa863ac00ada4a042636fdbe01eb6c "latex"
+  "out/main.toc" 1735215668.92593 1918 e22fedf488c6f0d91176ea8326a48af1 "latex"
   "preamble_p_book.tex" 1735211188.39467 4888 d72bf520f7192b5bd5ad8cfc58001324 ""
   "title/Title:Zundazemi2.png" 1735211188.41508 2368824 adb4336e065cd5b9f882b6fa17f7dd0a ""
   "title/title2.tex" 1735211188.4157 891 8345a6ba991dd160d2df672d6fa314bc ""

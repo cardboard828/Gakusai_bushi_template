@@ -1,10 +1,10 @@
-PWD /Users/yuichimori/gakusai_bushi/gakusai-bushi
+PWD /Users/yuichimori/gakusai_bushi_template
 INPUT /usr/local/texlive/2024/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-var/web2c/euptex/platex.fmt
-INPUT /Users/yuichimori/gakusai_bushi/gakusai-bushi/main.tex
+INPUT /Users/yuichimori/gakusai_bushi_template/main.tex
 OUTPUT out/main.log
 INPUT /usr/local/texlive/2024/texmf-dist/tex/platex/jsclasses/jsbook.cls
 INPUT /usr/local/texlive/2024/texmf-dist/tex/platex/jsclasses/jsbook.cls
