@@ -20,4 +20,10 @@ sudo apt upgrade
 sudo apt install texlive-full
 ```
 
+こだわりがない限りはVSCodeを使って書くのが便利そうです。
+私は[VSCode で最高の LaTeX 環境を作る](https://qiita.com/rainbartown/items/d7718f12d71e688f3573)という記事を参考にVSCodeでLaTeXできるようにしました。
+テンプレートの中にある.latexmkrcファイルもこのサイトのものを丸パクリしています。
+
+
+
 
