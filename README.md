@@ -6,6 +6,8 @@
 ## 準備
 このテンプレートを使うには
 - 完全なTeX Live環境
+
+
 が必要です。macについてはHomebrewを使ってmactexをインストールしてもらえれば大丈夫です。
 私はWinユーザーではないので全く保証はできませんが，Windowsについては[WSL](https://learn.microsoft.com/ja-jp/windows/wsl/install)を使ってUbuntuをインストールするのが便利らしいです。
 Ubuntuならば，以下のコマンドでインストールできるらしいです。
