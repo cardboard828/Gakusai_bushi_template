@@ -28,6 +28,15 @@ sudo apt install texlive-full
 GitHubで「Use this template」をクリックして、リポジトリを作成するのが便利です。
 詳しくは，[テンプレートからリポジトリを作成する](https://docs.github.com/ja/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)等を参照してみてください。
 
+### 表紙
+Titleフォルダの中にあるtitle.texをmain.texで読み込むことで表紙を表示します。
+表紙は別で作成して，画像（比率はA4と同じ）として出力することを想定しています。
+title.texの中の\includegraphics{}に読み込む画像のパスを書くことでその画像が表紙として表示されます。
+画像は画面いっぱいいっぱいに出力されるようにしています。
+[TeXでjsbookの表紙いっぱいに画像を設定する](https://qiita.com/gatosyocora/items/396d11b94d9201c61094)を参考にしました。
+
+
+
 
 
 
