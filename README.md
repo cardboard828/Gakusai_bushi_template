@@ -24,6 +24,10 @@ sudo apt install texlive-full
 私は[VSCode で最高の LaTeX 環境を作る](https://qiita.com/rainbartown/items/d7718f12d71e688f3573)という記事を参考にVSCodeでLaTeXできるようにしました。
 テンプレートの中にある.latexmkrcファイルもこのサイトのものを丸パクリしています。
 
+## 使い方
+GitHubで「Use this template」をクリックして、リポジトリを作成するのが便利です。
+詳しくは，[テンプレートからリポジトリを作成する](https://docs.github.com/ja/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)等を参照してみてください。
+
 
 
 
