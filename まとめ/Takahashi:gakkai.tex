@@ -1,0 +1,33 @@
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[EL]{\thepage}
+\fancyhead[OR]{\thepage}
+\titleformat{\chapter}[hang]{\mcfamily}{}{0pt}{
+  \begin{TTL}
+    \centering
+    {\LARGE #1}
+\end{TTL}
+}[\centerline{理学部化学科 \UTF{9AD9}橋真日路}]
+\phantomsection
+\addcontentsline{toc}{chapter}{素人が学会に行く意義}
+\chapter*{素人が学会に行く意義}
+
+\thispagestyle{fancy}
+%\setcounter{section}{0}
+\stepcounter{hoge}
+\input{Takahashi:Gakkai/Takahashi_gakkai_essey (1).tex}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[EL]{\thepage}
+\fancyhead[OR]{\thepage}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\sectionmark}[1]{\markboth{\thesection #1}{}}
+\renewcommand{\subsectionmark}[1]{\markright{\thesubsection #1}}
+\fancyhead{\gdef\headrulewidth{.0pt}}
+\fancyhead[ER]{\leftmark}
+\fancyhead[EL]{\thepage}
+\fancyhead[OL]{\rightmark}
+\fancyhead[OR]{\thepage}
+\cfoot{}

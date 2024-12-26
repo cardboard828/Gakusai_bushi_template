@@ -1,0 +1,21 @@
+\contentsline {part}{第I部\hspace {1zw}活動紹介}{1}{part.3}%
+\contentsline {part}{第II部\hspace {1zw}個人記事}{5}{part.4}%
+\contentsline {chapter}{量子測定と不確定性関係}{7}{section*.5}%
+\contentsline {section}{\numberline {1}まえがき}{7}{section.7}%
+\contentsline {section}{\numberline {2}量子測定理論}{8}{section.8}%
+\contentsline {subsection}{\numberline {2.1}射影測定}{8}{subsection.9}%
+\contentsline {subsection}{\numberline {2.2}間接測定とPOVM}{9}{subsection.12}%
+\contentsline {subsection}{\numberline {2.3}測定に伴う誤差と反作用}{11}{subsection.18}%
+\contentsline {subsubsection}{\numberline {2.3.1}測定誤差}{11}{subsubsection.19}%
+\contentsline {subsubsection}{\numberline {2.3.2}測定による反作用}{13}{subsubsection.20}%
+\contentsline {section}{\numberline {3}不確定性関係}{13}{section.21}%
+\contentsline {subsection}{\numberline {3.1}ケナード・ロバートソンの不確定性関係}{13}{subsection.22}%
+\contentsline {subsection}{\numberline {3.2}不偏性条件が成立するときの不確定性関係}{15}{subsection.24}%
+\contentsline {subsubsection}{\numberline {3.2.1}アーサー・ケリー・グッドマンの不確定性関係}{15}{subsubsection.25}%
+\contentsline {subsubsection}{\numberline {3.2.2}測定誤差と反作用の不確定性関係}{16}{subsubsection.26}%
+\contentsline {subsection}{\numberline {3.3}小澤の不等式}{17}{subsection.27}%
+\contentsline {section}{\numberline {4}付録 量子力学の基礎}{19}{section.29}%
+\contentsline {subsection}{\numberline {4.1}量子力学における状態と物理量}{20}{subsection.30}%
+\contentsline {subsection}{\numberline {4.2}混合状態と密度演算子}{22}{subsection.34}%
+\contentsline {subsection}{\numberline {4.3}合成系の状態}{23}{subsection.37}%
+\contentsline {subsection}{\numberline {4.4}量子系の時間発展}{25}{subsection.39}%

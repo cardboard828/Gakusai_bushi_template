@@ -1,0 +1,162 @@
+
+
+%-----グラフィック------------------------------------------------------
+%呪文
+\usepackage[dvipdfmx]{graphicx, xcolor}
+\definecolor{mygreen}{rgb}{0.1,0.35,0.35}
+\definecolor{mygreen2}{rgb}{0.1,0.4,0.3}
+\definecolor{myblue}{rgb}{0,0.25,0.9}
+\definecolor{myred}{rgb}{1,0.2,0.2}
+%\usepackage[dvipsnames]{xcolor}
+%枠つき部分作るならtcolorbox一択、使い方はググればわかる
+\usepackage{tcolorbox}
+%tcolorboxの機能拡張。ページまたぎを実現/ボックスの装飾機能の拡張
+\tcbuselibrary{breakable,skins,raster}
+%tcolorboxの使用例。ゼミ資料のグレーの枠はこう定義して使ってる。
+\newtcolorbox{mybox}{colframe=gray!10, colback=gray!10, sharp corners}
+%記事タイトル用
+\newtcolorbox{TTL}{colframe=white, colback=white}
+
+%見出しの体裁のカスタマイズ
+\usepackage[explicit]{titlesec}
+%下を入れるとpartが見えなくなる
+%\titleformat{\part}[hang]{\bfseries\gtfamily}{}{10pt}{}
+%chapter（タイトル、名前）と本文の距離の設定
+\titlespacing{\chapter}{0.01zw}{1zw}{4zw}[0.01zw]
+
+%ヘッダー、フッターの設定
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\renewcommand{\sectionmark}[1]{\markboth{\thesection #1}{}}
+\renewcommand{\subsectionmark}[1]{\markright{\thesubsection #1}}
+\fancyhead{\gdef\headrulewidth{.0pt}}
+\fancyhead[ER]{\leftmark}
+\fancyhead[EL]{\thepage}
+\fancyhead[OL]{\rightmark}
+\fancyhead[OR]{\thepage}
+\cfoot{}
+
+
+%thebibliography環境をchapterではなくsectionみたいに扱う
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\chapter*}{\section*}{}{}
+
+%sectionの番号をchapter-independentにする
+\usepackage{remreset}
+\makeatletter
+  \@removefromreset{section}{chapter}
+\makeatother
+\renewcommand{\thesection}{\arabic{section}}
+
+\setcounter{secnumdepth}{3}
+
+%最悪なんだけど、何用なのか忘れてしまった
+\usepackage[pass]{geometry}
+
+%奥付け
+\usepackage{tabularx}
+\usepackage[bb=boondox,bbscaled=.95,cal=boondoxo]{mathalfa}
+\renewcommand{\hrulefill}{%
+  \leavevmode\leaders\hrule height 1pt\hfill\kern0pt }
+
+%-----以下数式関係----------------------------------------------------
+
+% 数式, 米国数学会が開発したのがamsmath, フォントを使うためのパッケージがamssymbs
+\usepackage{amsmath,amssymb}
+%定理環境、コピペ
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{dfn}{定義}[section]
+\newtheorem{prop}{命題}[section]
+\newtheorem{lem}{補題}[section]
+\newtheorem{thm}{定理}[section]
+\newtheorem*{thm*}{定理}
+\newtheorem{cor}{系}[section]
+\newtheorem{rem}{注意}[section]
+\newtheorem*{rem*}{注意}
+\newtheorem{fact}{事実}[section]
+\newtheorem{e.g.}{例}[section]
+
+%証明終わりの四角
+\renewcommand{\qedsymbol}{$\square$}
+
+%花文字?（2023/6/10追加）, RSFS, Ralph Smith's Formal Script(2024/3/3追記)
+\usepackage{mathrsfs}
+
+% 数式太文字
+\usepackage{bm}
+
+%proofカスタム, 適宜変更
+\renewcommand{\proofname}{\textbf{証明}}
+
+%\label{}して\ref, \eqref　で参照した数式のみに数式番号が振られるようにしてる
+%だからequationやalignを*なしで使っても参照しない限り式番号はつかない
+\usepackage{mathtools}
+\mathtoolsset{showonlyrefs=true}
+%2024/10/3追加（工藤英哲さん用のパッケージ）
+\usepackage{empheq}
+
+%白紙ページ生成用
+\usepackage{afterpage}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{0}%
+    \newpage}
+
+
+%-----以下自然科学関係------------------------------------------------------
+
+%便利なので
+\usepackage{physics}
+%単位
+\usepackage{siunitx}
+%元素とか, 化学反応式とか
+\usepackage[version=4]{mhchem}
+\usepackage{chemfig}
+
+%-----以下図表の配置関係------------------------------------------------------
+
+% 表の強制固定
+\usepackage{float}
+
+%-----以下その他------------------------------------------------------
+
+% comment、\begin{comment}~\end{comment}で挟んだ箇所がコンパイル時に無視される
+\usepackage{comment}
+%OTFパッケージ・漢字用、例えば「﨑」はuplatexだと出力できないけど、対応するjisコードを\UTF{}で読み込むと出力できる
+\usepackage[jis2004, deluxe]{otf}
+%\url用
+%\usepackage{url}
+
+\usepackage[
+dvipdfmx,% 欧文ではコメントアウトする
+setpagesize=false,%
+bookmarks=true,%
+bookmarksdepth=tocdepth,%
+bookmarksnumbered=true,%
+hypertexnames=false,% 
+linktoc=chapter,%
+colorlinks=false,%
+allcolors=blue%
+pdftitle={},%
+pdfsubject={},%
+pdfauthor={},%
+pdfkeywords={}%
+]{hyperref}
+% PDFのしおり機能の日本語文字化けを防ぐ((u)pLaTeXのときのみかく)
+\usepackage{pxjahyper}
+\hypersetup{
+    colorlinks=true, %ここをfalseにすればlinkの文字に色がつかずに四角で囲まれるようになる
+    citecolor=myred,
+    linkcolor=myblue,
+    urlcolor=mygreen2,%teal,
+}
+
+
+
+
+
+

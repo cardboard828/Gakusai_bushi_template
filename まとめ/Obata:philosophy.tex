@@ -1,0 +1,26 @@
+\fancyhead{}
+\fancyhead[EL]{\thepage}
+\fancyhead[OR]{\thepage}
+\titleformat{\chapter}[hang]{\mcfamily}{}{0pt}{
+  \begin{TTL}
+    \centering
+    {\LARGE #1}
+\end{TTL}
+}[\centerline{理学部地球宇宙物理学科 小幡利空}]
+\phantomsection
+\addcontentsline{toc}{chapter}{勉強を哲学的に考察してみた}
+\chapter*{勉強を哲学的に考察してみた}
+
+\thispagestyle{fancy}
+%\setcounter{section}{0}
+\stepcounter{hoge}
+\input{Obata:studying-philosophically/勉強を哲学的に考察してみた.tex}
+\fancyhead{}
+\renewcommand{\sectionmark}[1]{\markboth{\thesection #1}{}}
+\renewcommand{\subsectionmark}[1]{\markright{\thesubsection #1}}
+\fancyhead{\gdef\headrulewidth{.0pt}}
+\fancyhead[ER]{\leftmark}
+\fancyhead[EL]{\thepage}
+\fancyhead[OL]{\rightmark}
+\fancyhead[OR]{\thepage}
+\cfoot{}

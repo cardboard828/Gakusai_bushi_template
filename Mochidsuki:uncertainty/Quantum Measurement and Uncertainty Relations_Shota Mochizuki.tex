@@ -1,0 +1,294 @@
+%\documentclass[a5paper,oneside]{jsarticle}
+%\input{preamble_p.tex}
+
+
+%\begin{document}
+%\title{量子測定と不確定性関係}
+%\author{東北大学理学部物理学科3年\\望月翔太}
+%\date{}
+%\maketitle
+
+\section{まえがき}
+私は夏の長期休暇中に数物セミナーという数学と物理のセミナー合宿に参加し, そこで文献\cite{sagawaueda}のセミナーを行った. 本稿は, そこで学んだ内容を基に書いたものである. 基本的に量子力学について少し知っていることを前提としている. 特に, 混合状態や密度演算子, 合成系の状態などについて知っていると望ましい. 量子力学の基礎についてあまり知らない人は参考文献に挙げた\cite{simizu}のような量子力学の教科書で学ぶのがよいだろう.  
+ただ, 学部教養程度の線形代数を知っていれば読めるように, 付録に本稿を読む上で最低限必要と思われる量子力学の基礎事項を記した. 全体的に誤りを含む場合があるので注意していただきたい. 
+\\
+
+量子力学で「測定」がどのように定式化できるか考えたことがあるだろうか. 学部レベルの量子力学の教科書の多くには量子力学における測定として射影測定しか取り上げられていない. しかし, 射影測定はシステムに対する最も理想的な測定過程であり, システムに作用する測定器の存在が見えなくなっている. 実際には測定過程ではシステムと相互作用する測定器が存在し, 測定過程によって誤差の出方が様々であるため, 測定過程の定式化としては射影測定では十分とはいえないだろう. 本稿ではまず初めに, 測定過程において重要なモデルである「間接測定モデル」についてみる. 
+
+また量子力学には(ケナード・ロバートソンの)不確定性関係というものがある. この不確定性関係は驚くべきことに, 測定過程に関わらず量子系は, 例えば粒子の位置と運動量の値が同時に定まった状態をとることはないことを示している. この不確定性関係は, 位置と運動量以外の物理量についても成立し, 量子系そのものがもつ「量子ゆらぎ」の性質表している. しかし, 最初にハイゼンベルクが議論した不確定性原理は測定過程における測定誤差と擾乱のトレードオフ関係であり, 上の不確定性関係とは意味が異なる. それでは, ハイゼンベルクが議論したような測定過程におけるトレードオフに関する不確定性関係はどのようなもだろうか. 本稿では測定過程についてみた後に, 続いて不確定性関係についてみていく.
+
+\section{量子測定理論}
+まずはじめに量子測定理論の枠組みについて解説していく.
+\subsection{射影測定}
+ここでは最も理想的な測定である射影測定について考えていく. システムの量子状態が密度演算子$\hat{\rho}$で記述されているときに, 物理量\(\hat{A}=\sum_{k}\alpha_{k}\hat{P}_{k}\)を射影測定することを考える. ここで, \(\hat{P}_k\)は固有値\(\alpha_k\)についての射影演算子で, \(\sum_k\hat{P}_k=\hat{I}\)を満たす\footnote{射影演算子は, \(\hat{P}_k^\dag=\hat{P}_k,\,\hat{P}_k^2=\hat{P}_k\)などの性質ももつ.}(\(\hat{I}\)はシステムの恒等演算子).  
+
+まず, 経験的に確立された事実として射影公理について見ていこう. 物理量\(\hat{A}\)についての射影測定を行うと, 固有値の一つの\(\alpha_k\)が測定結果になり, その値が得られる確率は\(p_k=\tr[\hat{P}_k\hat{\rho}]\)で与えられる.\footnote{これはボルンの確率規則と呼ばれる.} 射影測定ではこのとき状態が固有値\(\alpha_k\)の固有空間に射影され, 次のように新たな状態\(\hat{\rho}'_k\)に変化する:
+\begin{equation}
+  \hat{\rho}'_k=\frac{1}{p_k}\hat{P}_k\hat{\rho}\hat{P}_k.
+\end{equation}
+測定過程でこのように状態が変化するというのを「射影公理」といい, 以上の測定過程を「射影測定」という. 
+
+射影測定には, 測定後の状態を何度射影測定しても同じ測定結果が得られるという特徴があり, また射影測定による測定は誤差がない. 
+
+\subsection{間接測定とPOVM}
+実際の測定は測定器でシステムの物理量の値を読み取ることが多いが, このときシステムとは異なる量子系をシステムと相互作用させている. このような測定には射影公理が満たされないものもあり, また実際の測定ではシステムの量子ゆらぎに依らない測定誤差も伴う. このような一般的な状況を扱うために重要になってくるのが「間接測定」と呼ばれる測定過程である. 
+
+間接測定は, 測定対象であるシステムとプローブを相互作用させ, プローブについての射影測定を行うことによってシステムの情報を読み取る方法である.\footnote{ここでプローブについての射影測定をすると書いたが, 次の脚注で述べるように一般に射影測定の対象となる物理量はプローブだけでなく全系の物理量である. 
+} 間接測定では相互作用によってシステムとプローブ間に相関を作るが, 実際の測定では相関が不完全で, それによる誤差が生まれることが多い. 
+
+以下, 間接測定の定式化を行うが, システムとプローブの初期状態をそれぞれ\(\hat{\rho},\,\hat{\rho}_{\si{P}}\)とし, またシステムとプローブの間にはじめは相関はなく全系の状態が積状態\(\hat{\rho}\otimes\hat{\rho}_P\)で書けるとする. また, プローブの初期状態は\(\hat{\rho}_{\si{P}}=\sum_kq_k\ket{\Phi_k}\bra{\Phi_k}\) (\(\braket{\Phi_k}{\Phi_l}=\delta_{kl}\))とし, また\(\{\ket{\Psi_k}\}\)をプローブの任意の完全正規直交系とする. 
+
+システムとプローブの相互作用による時間発展をユニタリ演算子\(\hat{U}\)で記述することにすると, 相互作用後の全系の状態\(\hat{\rho}_{\si{tot}}\)は次のようになる:
+\begin{equation}
+  \hat{\rho}_{\si{tot}}=\hat{U}(\hat{\rho}\otimes\hat{\rho}_P)\hat{U}^\dag.
+\end{equation}
+
+ここで, 射影測定する物理量を\(\hat{R}\coloneqq\sum_{k}r_k\hat{P}_k\)とする. \footnote{この物理量はプローブのみの物理量(\(\hat{R}=\hat{I}\otimes\hat{R}_{\si{P}}\)のように書けるもの)とは限らない. 一般には射影測定の対象となる物理量は全体系の物理量であり, 例えばホモダイン測定やヘテロダイン測定はそのような状況である.}, \(\hat{P}_k\)は固有値\(r_k\)に対応する射影演算子である. システムとプローブを相互作用させた後に, 物理量\(\hat{R}\)を射影測定して結果として固有値 \(r_k\)が得られた場合を考える. このとき, 射影公理から全系の状態は次のような\(\hat{\rho}_{\si{tot},k}\)に射影される: 
+\begin{equation}
+  \hat{\rho}_{\si{tot},k}=\frac{\hat{P}_k\hat{U}(\hat{\rho}\otimes\hat{\rho}_P)\hat{U}^\dag\hat{P}_k}{p_k}.
+\end{equation}
+ここで, ボルンの確率規則から\(p_k=\tr_{\si{SP}}[\hat{P}_k\hat{\rho}_{\si{tot}}]\)である.\footnote{\(\tr_{\si{SP}}[\cdot]\)は, 全系についてのトレースである.}  プローブについての部分トレース(\(\tr_{\si{P}}[\cdot]\))を取ると, 測定後のシステムの状態\(\hat{\rho}_k\)は次のようになる:
+\begin{equation}
+  \begin{aligned}
+    \hat{\rho}_k&=\frac{1}{p_k}\tr_{\si{P}}\left[\hat{P}_k\hat{U}(\hat{\rho}\otimes\hat{\rho}_P)\hat{U}^\dag\hat{P}_k\right]\\
+    &=\frac{1}{p_k}\sum_{lm}q_l\bra{\Psi_m}\hat{P}_k\hat{U}\hat{\rho}\otimes(\ket{\Phi_l}\bra{\Phi_l})\hat{U}^\dag\hat{P}_k\ket{\Psi_m}\\
+    &=\frac{1}{p_k}\sum_{lm}q_l\bra{\Psi_m}\hat{P}_k\hat{U}\ket{\Phi_l}\hat{\rho}\bra{\Phi_l}\hat{U}^\dag\hat{P}_k\ket{\Psi_m}\\
+    &=\frac{1}{p_k}\sum_{i}\hat{M}_{ki}\hat{\rho}\hat{M}_{ki}^\dag.
+  \end{aligned}
+\end{equation}
+ここで, 測定演算子\footnote{ここで多くは述べないが, この測定演算子はクラウス演算子とも呼ばれ, クラウス演算子は\(\sum_{k}\hat{M}_{k}^\dag\hat{M}_{k}=\hat{I}\)の完全性条件を満たすシステムの演算子を指し, システムの非ユニタリ時間発展を記述するのに用いられる. ここで定義した\(\hat{M}_{ki}\)は\(\sum_{ki}\hat{M}^\dag_{ki}\hat{M}_{ki}=\hat{I}\)を満たす.}\(\hat{M}_{ki}\)を
+\begin{equation}
+  \hat{M}_{ki}\coloneqq\sqrt{q_l}\bra{\Psi_m}\hat{P}_k\hat{U}\ket{\Phi_l},\hspace{2mm}(i=(l,m))
+\end{equation}
+とした. これを用いると, 測定値\(r_k\)を得る確率\(p_k\)はボルンの確率規則より, 
+\begin{equation}
+  \begin{aligned}
+    p_k&=\tr_{\si{SP}}[\hat{P}_k\hat{U}(\hat{\rho}\otimes\hat{\rho}_P)\hat{U}^\dag]\\
+    &=\tr_{\si{S}}[\tr_{\si{P}}[\hat{P}_k\hat{U}(\hat{\rho}\otimes\hat{\rho}_P)\hat{U}^\dag\hat{P}_k]]\\
+    &=\tr_{\si{S}}\left[\sum_{i}\hat{M}_{ki}\hat{\rho}\hat{M}_{ki}^\dag\right]\\
+    &=\tr_{\si{S}}\left[\sum_{i}\hat{M}_{ki}^\dag\hat{M}_{ki}\hat{\rho}\right]\\
+    &=\tr_{\si{S}}[\hat{E}_k\hat{\rho}]
+    \end{aligned}
+\end{equation}
+となる. ここで
+\begin{equation}
+  \hat{E}_k\coloneqq\sum_{i}\hat{M}_{ki}^\dag\hat{M}_{ki}
+\end{equation}
+とした. つまり, 測定結果\(k\)を得る確率は演算子\(\hat{E}_k\)のシステムの初期状態での期待値である. この\(\sum_{k}\hat{E}_{k}=\hat{I}\)を満たす正値演算子の組\(\{\hat{E}_k\}\)は\textbf{POVM}(Positive Operater-Valued Measure)と呼ばれる.\footnote{この定義は実際には正確ではない.} また\(\hat{E}_k\)は次のようにも表せる:
+\begin{equation}
+  \begin{aligned}
+    \hat{E}_k&\coloneqq\sum_{lm}\sqrt{q_l}\bra{\Phi_l}\hat{U}^\dag\hat{P}_k\ket{\Psi_m}\sqrt{q_l}\bra{\Psi_m}\hat{P}_k\hat{U}\ket{\Phi_m}\\
+    &=\sum_{l}q_l\bra{\Phi_l}\hat{U}^\dag\hat{P}_k\hat{U}\ket{\Phi_l}=\tr_{\si{P}}[\hat{U}^\dag\hat{P}_k\hat{U}\hat{\rho}_{\si{P}}].
+    \end{aligned}
+\end{equation}
+
+\subsection{測定に伴う誤差と反作用}
+次に, 量子測定に伴う誤差と反作用を定量化することを考える. 
+\subsubsection{測定誤差}
+ここでは測定誤差について考える. 測定しようとしている物理量を\(\hat{A}\)とし, 間接測定で物理量\(\hat{R}\)の射影測定をするとする. 
+ 測定誤差を表す演算子として以下の誤差演算子を定義する:
+\begin{equation}
+  \hat{N}\coloneqq\hat{U}^\dag\hat{R}\hat{U}-\hat{A}.
+\end{equation}
+
+この誤差演算子の2乗の期待値\(\ev{\hat{N}^2}\)「任意」の\(\hat{\rho}\)についてゼロであることは, \(\alpha_k=r_k\)かつ\(\hat{E}_k=\hat{P}_k\)であること(誤差のない測定であること)の必要十分条件であることが知られている. ここで\(\hat{A}=\sum_k\alpha_k\hat{P}_k\)(\(l\neq m\)のとき\(\alpha_l\neq\alpha_m\))とスペクトル展開されるとした. このことから, 誤差演算子の2乗の期待値が測定誤差の尺度を与えているとわかる. 
+
+また間接測定の結果の期待値は, 前節の結果より
+\begin{equation}
+  \ev{\hat{A}}_{\si{meas}}\coloneqq\sum_{k}r_{k}p_k=\tr_{\si{SP}}[\hat{U}^\dag\hat{R}\hat{U}\hat{\rho}\otimes\hat{\rho}_{\si{P}}]
+\end{equation}
+で与えられる. また, 間接測定の結果の分散は,
+\begin{equation}
+  \begin{aligned}
+    \ev{\Delta \hat{A}^2}_{\si{meas}}&\coloneqq\sum_{k}r_k^2p_k-\left(\sum_{k}r_kp_k\right)^2\\
+    &=\ev{\hat{U}^\dag\hat{R}^2\hat{U}}-\ev{\hat{U}^\dag\hat{R}\hat{U}}^2
+    \end{aligned}
+\end{equation}
+与えられる. 以下のように
+\begin{equation}
+    \ev{\hat{A}}_{\si{meas}}=\ev{\hat{A}}
+\end{equation}
+が成り立つとき, 測定が不偏性条件が満たすという. これは以下のようにも書き換えることができる:
+\begin{equation}
+    \tr_{\si{SP}}[\hat{N}\hat{\rho}\otimes\hat{\rho}_B]=0.
+\end{equation}
+不偏性条件が成立するとき, 測定結果の分散\(\ev{\Delta\hat{A}^2}_{\si{meas}}\)と真の分散\(\ev{\Delta\hat{A}^2}\)の間に以下の関係が成り立つことがわかる:
+\begin{equation}
+    \ev{\Delta\hat{A}^2}_{\si{meas}}=\ev{\hat{N}^2}+\ev{\Delta\hat{A}^2}.
+\end{equation}
+つまり, 不偏性条件が成り立つときは測定結果の分散は真の分散に測定誤差の大きさが加わったものになり, このことからも誤差演算子が確かに測定誤差の尺度になっていそうであるとわかる. 
+\subsubsection{測定による反作用}
+ここでは, 物理量\(\hat{A}\)を測定したときに物理量\(\hat{B}\)が受ける反作用を特徴づける演算子を考える. そのような反作用演算子\(\hat{D}\)を次のように定義する:
+\begin{equation}
+    \hat{D}_B\coloneqq\hat{U}^\dag\hat{B}\hat{U}-\hat{B}.
+\end{equation}
+この定義を見ればわかるように, \(\hat{B}\)が受ける反作用を測定過程における時間発展で変化した\(\hat{B}\)と元々の\(\hat{B}\)の差として捉えている. また反作用の大きさを
+\begin{equation}
+  \ev{\hat{D}_B^2}\coloneqq\tr_{\si{SP}}[\hat{D}_B^2\hat{\rho}\otimes\hat{\rho}_P]
+\end{equation}
+と定義する. また, 任意の状態\(\hat{\rho}\)について
+\begin{equation}
+  \tr_{\si{SP}}[\hat{D}_B\hat{\rho}\otimes\hat{\rho}_{\si{P}}]=0
+\end{equation}
+が満たされるとき, 反作用は不偏性条件を満たすという. 不偏性条件が満たされる時は次の関係式が成立する:
+\begin{equation}
+    \ev{\hat{U}^\dag\Delta\hat{B}^2\hat{U}}=\ev{\hat{D}^2_B}+\ev{\Delta\hat{B}^2}.
+\end{equation}
+この式は, 不偏性条件が満たされる場合, 測定過程におけるシステムとプローブの相互作用によって変化した\(\hat{B}\)の量子ゆらぎは元の量子ゆらぎに反作用の大きさを加えたものになっていることを表している. 
+
+\section{不確定性関係}
+前章の結果を用いて, 以下では量子系における不確定性関係について議論していく. 
+\subsection{ケナード・ロバートソンの不確定性関係}
+ケナード・ロバートソンの不確定性関係は, 非可換な2つの物理量の量子ゆらぎの積の下限を与える不等式として表され, この不等式は量子状態の測定過程とは独立な非決定性を表している. 量子状態を\(\hat{\rho}\)とし, 物理量\(\hat{A},\,\hat{B}\)の量子ゆらぎをそれらの分散
+\begin{equation}
+  \ev{\Delta \hat{A}^2}\coloneqq \tr[\hat{A}^2\hat{\rho}]-\tr[\hat{A}\hat{\rho}]^2,\hspace{1mm}\ev{\Delta \hat{B}^2}\coloneqq \tr[\hat{B}^2\hat{\rho}]-\tr[\hat{B}\hat{\rho}]^2
+\end{equation}
+とする. これらの量子ゆらぎは物理量の測定を誤差なく行ったときに得られる測定結果の分散であり, 測定過程に関係しない量子系の固有の量子ゆらぎである. ケナード・ロバートソンの不確定性関係は, これらを用いて次のように書き表される:
+\begin{equation}
+  \ev{\Delta\hat{A}^2}\ev{\Delta\hat{B}^2}\geq\frac{1}{4}\left|\tr[[\hat{A},\hat{B}]\hat{\rho}]\right|^2.
+\end{equation}
+この不等式が意味するところは, 2つの物理量の分散の積の下限はそれらの物理量の交換関係の期待値によって与えられ, 2つの物理量が非可換のときは両者の量子ゆらぎを同時にゼロにすることはできないということであり, 量子状態への制限を与えている. また, この不等式の2つの物理量の分散は同時に誤差のない測定して与えられるのではないということに注意しよう. 左辺の2つの分散はともに同じ\(\hat{\rho}\)における期待値であり, 同じ初期状態を何個も用意して2つのグループに分け, 一方のグループについては\(\hat{A}\)について誤差のない測定を, もう一方のグループについては\(\hat{B}\)について誤差のない測定をして得られる. 
+
+以下に証明を与える. 
+\begin{proof}
+\(\Delta\hat{A}\coloneqq\hat{A}-\tr[\hat{A}\hat{\rho}],\,\Delta\hat{B}\coloneqq\hat{B}-\tr[\hat{B}\hat{\rho}]\)とする. 実数\(x\)についての二次式
+\begin{equation}
+  \begin{aligned}
+    f(x)&\coloneqq\tr[(x\Delta\hat{A}+i\Delta\hat{B})^\dag(x\Delta\hat{A}+i\Delta\hat{B})\hat{\rho}]\\
+    &=\tr[\Delta\hat{A}^2\hat{\rho}]x^2+\tr[i[\Delta\hat{A},\Delta\hat{B}]\hat{\rho}]x+\tr[\Delta\hat{B}^2\hat{\rho}]
+  \end{aligned}
+\end{equation}
+を考える. \(\Delta\hat{A}^2,\,i[\Delta\hat{A},\Delta\hat{B}],\,\Delta\hat{B}^2\)はエルミート演算子であるから, この二次式の係数は全て実数である. 定義から\(f(x)\)は任意の\(x\in\mathbb{R}\)について非負であるから, 判別式は次のようになる\footnote{演算子\(\hat{C}\)について\(\tr[\hat{C}^\dag\hat{C}\hat{\rho}]\geq0\)が成立する. これは次のように容易に示せる. 密度演算子\(\hat{\rho}\)を\(\hat{\rho}\coloneqq\sum_kp_k\ket{\phi_k}\bra{\phi_k}\,(p_k\geq0)\)とスペクトル展開すると, トレースの線形性および巡回性を用いれば\(\tr[\hat{C}^\dag\hat{C}\hat{\rho}]=\sum_kp_k\bra{\phi_k}\hat{C}^\dag\hat{C}\ket{\phi_k}=\sum_kp_k|\hat{C}\ket{\phi_k}|^2\geq0.\) ケナード・ロバートソンの不確定性関係の証明では, \(\hat{C}=x\hat{A}+i\Delta\hat{B}\)としている.}:
+\begin{equation}
+  \left(\tr[i[\Delta\hat{A},\Delta\hat{B}]\hat{\rho}]\right)^2-4\tr[\Delta\hat{A}^2\hat{\rho}]\tr[\Delta\hat{B}^2\hat{\rho}]\leq0.
+\end{equation}
+ここで\([\Delta\hat{A},\Delta\hat{B}]=[\hat{A},\hat{B}]\)より, ケナード・ロバートソンの不確定性関係が従う. 
+\end{proof}  
+
+\subsection{不偏性条件が成立するときの不確定性関係}
+\subsubsection{アーサー・ケリー・グッドマンの不確定性関係}
+次に非可換な物理量の同時測定を考える. ここでは同時測定が不偏性条件を満たすときの誤差演算子についての不確定性関係であるアーサー・ケリー・グッドマンの不確定性関係を考えよう. \(\hat{A},\,\hat{B}\)を\([\hat{A},\,\hat{B}]\neq0\)であるようなシステムの物理量とし, これらの同時測定を考える. システムをプローブとユニタリ演算子\(\hat{U}\)で相互作用させ, プローブの物理量\(\hat{R}_A,\,\hat{R}_B\)を通して\(\hat{A},\,\hat{B}\)の情報を得る. ここで, プローブの物理量は\([\hat{R}_A,\hat{R}_B]=0\)となるようにとり, これらを直接同時測定して\(\hat{R}_A\)から\(\hat{A}\)の, \(\hat{R}_B\)から\(\hat{B}\)の情報をそれぞれ読み出す. また, \(\hat{A},\,\hat{B}\)の測定誤差に対応する演算子をそれぞれ
+\begin{equation}
+  \hat{N}_A\coloneqq\hat{U}^\dag\hat{R}_A\hat{U}-\hat{A},\hspace{2mm}\hat{N}_B\coloneqq\hat{U}^\dag\hat{R}_B\hat{U}-\hat{B}
+\end{equation}
+と定義する. 
+
+ここでは不偏性条件, すなわち任意のシステムの状態\(\hat{\rho}\)に対して
+\begin{equation}
+  \ev{\hat{A}}=\ev{\hat{A}}_{\si{meas}},\hspace{2mm}\ev{\hat{B}}=\ev{\hat{B}}_{\si{meas}}
+\end{equation}
+が満たされているとする. このとき次のようなアーサー・ケリー・グッドマンの不確定性関係
+\begin{equation}
+  \ev{\hat{N}^2_A}\ev{\hat{N}^2_B}\geq\frac{1}{4}\left|\tr[[\hat{A},\hat{B}]\hat{\rho}]\right|^2
+\end{equation}
+が成立する. つまり, 右辺をゼロにできなければ2つの物理量を誤差なく同時測定することができない. また, 不等式の形はケナード・ロバートソンの不確定性関係の不等式の形と同じ形だが, ケナードロバートソンの不確定性関係は量子状態そのものへの制限であったのに対して, アーサー・ケリー・グッドマンの不確定性関係は同じ系に対して同時測定を行ったときの測定過程に対する制限を表している.  証明は省略するが, 不偏性条件と\(\hat{N}_A,\,\hat{N}_B\)に関するケナード・ロバートソンの不確定性関係を用いることで容易に証明される. 
+\begin{equation}
+  \ev{\Delta \hat{A}^2}_{\si{meas}}=\ev{\hat{N}^2_A}+\ev{\Delta \hat{A}^2},\hspace{2mm}\ev{\Delta \hat{B}^2}_{\si{meas}}=\ev{\hat{N}^2_B}+\ev{\Delta \hat{B}^2}
+\end{equation}
+と, ケナード・ロバートソンの不確定性関係を用いれば, アーサー・ケリー・グッドマンの不確定性関係は次のように書き換えることができる:
+\begin{equation}
+  \ev{\Delta \hat{A}^2}_{\si{meas}}\ev{\Delta \hat{B}^2}_{\si{meas}}\geq\left|\tr[[\hat{A},\hat{B}]\hat{\rho}]\right|^2.
+\end{equation}
+この式からわかるように, 測定結果の標準偏差の積\(\sqrt{\ev{\Delta A^2}_{\si{meas}}}\sqrt{\ev{\Delta B^2}_{\si{meas}}}\)の下限がケナード・ロバートソンの不確定性関係の右辺の2倍になっている. これは測定過程によるゆらぎの大きさが, 系そのものがもつ量子ゆらぎと同等であると考えてよいだろう. 
+
+\subsubsection{測定誤差と反作用の不確定性関係}
+次は同時測定ではなく, 物理量\(\hat{A}\)を測定したときの物理量\(\hat{B}\)への反作用を考える. \(\hat{A}\)の測定は不偏性条件を満たすとし, \(\hat{B}\)の反作用演算子を\(\hat{D}_B\)を
+\begin{equation}
+  \hat{D}_B\coloneqq\hat{U}^\dag\hat{B}\hat{U}-\hat{B}
+\end{equation}
+と定義し, 反作用も不偏性条件を満たすとする. アーサー・ケリー・グッドマンの不確定性関係と同様に次のような不等式が成立する:
+\begin{equation}
+   \ev{\hat{N}^2_A}\ev{\hat{D}^2_B}\geq\frac{1}{4}\left|\tr[[\hat{A},\hat{B}]\hat{\rho}]\right|^2.
+\end{equation}
+つまり, 右辺がゼロでなければ\(\hat{A}\)の測定誤差を有限に保ったまま\(\hat{B}\)への反作用をゼロにすることができない. 
+
+この設定は, ハイゼンベルグの思考実験に設定が非常に似ている. ハイゼンベルグの思考実験では, 電子の位置をガンマ線顕微鏡で\(\Delta x\)の精度で測定したとき, 電子の運動量が\(\Delta p\)だけ擾乱され, これらの間には,
+\begin{equation}
+  \Delta x\Delta p\sim\frac{\hbar}{2}
+\end{equation}
+の関係があるとされた. このような類似性もあり, ここで求めた測定誤差と反作用の不確定性関係は, ハイゼンベルクの不確定性関係と呼ばれることもある. 以降はこの不等式をハイゼンベルクの不確定性関係と呼ぶことにする. 
+
+しかし, ここで見た2つの不等式は不偏性条件を仮定しているため, 不偏性条件が満たされない場合は左辺が右辺より小さくなることもある. 次節では不偏性条件を仮定しないより一般的な不確定性関係をみる. 
+
+\subsection{小澤の不等式}
+最後に, より一般的な不確定性に関する不等式である小澤の不等式についてみよう. 
+
+まず, \cite{M.Ozawa}で示された小澤の不等式についてみよう. 小澤の不等式は, 測定における誤差と擾乱による反作用のトレードオフに関する不等式である. 
+
+測定する物理量を\(\hat{A}\), 測定により反作用を受ける物理量を\(\hat{B}\)とする. \(\hat{A}\)の誤差演算子\(\hat{N}_A\)と\(\hat{B}\)の反作用演算子\(\hat{D}_B\)の定義は前節と同じとする. また, 測定誤差や反作用, 量子ゆらぎを次のように書くとする:
+\begin{equation}
+  \epsilon(C)\coloneqq\sqrt{\ev{\hat{N}_C^2}},\hspace{2mm}\eta(C)\coloneqq\sqrt{\ev{\hat{D}^2_C}},\hspace{2mm}\sigma(C)\coloneqq\sqrt{\ev{\Delta\hat{C}^2}}.
+\end{equation}
+ここで, \(\hat{C}\)はシステムの任意の物理量である. この記法を用いて小澤の不等式は次のように書ける:
+\begin{equation}
+  \epsilon(A)\eta(B)+\epsilon(A)\sigma(B)+\sigma(A)\eta(B)\geq\frac{1}{2}\left|\ev{[\hat{A},\hat{B}]}\right|
+\end{equation}
+
+これは, 前節の不偏性条件が成立するときのハイゼンベルクの不確定性関係の式の左辺に\(\hat{A}\)の測定誤差と\(\hat{B}\)の量子ゆらぎの積と, \(\hat{A}\)の量子ゆらぎと\(\hat{B}\)が受ける反作用の積が加わっていることがわかる. 小澤の不等式では\(\epsilon(A)\eta(B)\)を右辺よりも小さくできる, ハイゼンベルクの不確定性関係が破れる可能性があることがわかる. 
+
+次に, \cite{M.Ozawa2}, \cite{M.Ozawa3}で議論された小澤の第2不等式\footnote{名称については\cite{kondo}を参考にした.}についてみる. この不等式は, 2つの物理量を同時測定した際の誤差のトレードオフを記述するものである. 上で定義した測定誤差などの表式をそのまま使えば, 次のように書ける:
+\begin{equation}
+  \epsilon(A)\epsilon(B)+\epsilon(A)\sigma(B)+\sigma(A)\epsilon(B)\geq\frac{1}{2}\left|\ev{[\hat{A},\hat{B}]}\right|.
+\end{equation}
+小澤の第2不等式はアーサー・ケリー・グッドマンの不確定性関係の左辺に量子ゆらぎと測定誤差の積が2つ追加されている. この不等式の証明に必要な仮定は\([\hat{R}_A,\hat{R}_B]=0\) のみであるため, やはり不偏性条件が必要なアーサー・ケリー・グッドマンの不等式よりもより一般的な不等式であることがわかる. 
+
+しかし, 2つの小澤の不等式はどちらも最も厳しい不等式になっているわけではない. アーサー・ケリー・グッドマンの不確定性関係やハイゼンベルクの不確定性関係はどちらも不偏性条件の下で等号成立の可能性があるが, 小澤の不等式についてはそれが最もタイト(tight)な不等式かどうかはわからない. 実際ブランシアード(\cite{Branciard})によってより厳しいタイトな不等式として以下の測定誤差と反作用のトレードオフの不等式:
+\begin{equation}
+    \begin{aligned}
+    &\epsilon(A)^2\sigma(B)^2+\sigma(A)^2\eta(B)^2\\
+    &+2\epsilon(A)\eta(B)\sqrt{\sigma(A)^2\sigma(B)^2-\left(\frac{1}{2}|\ev{[\hat
+{A},\hat{B}]}|\right)^2}\geq\frac{1}{4}\left|\ev{[\hat{A},\hat{B}]}\right|^2
+    \end{aligned}
+\end{equation}
+と, 同時測定の測定誤差のトレードオフの不等式:
+\begin{equation}
+    \begin{aligned}
+        &\epsilon(A)^2\sigma(B)^2+\sigma(A)^2\epsilon(B)^2\\
+    &+2\epsilon(A)\epsilon(B)\sqrt{\sigma(A)^2\sigma(B)^2-\left(\frac{1}{2}|\ev{[\hat
+{A},\hat{B}]}|\right)^2}\geq\frac{1}{4}\left|\ev{[\hat{A},\hat{B}]}\right|^2
+    \end{aligned}
+\end{equation}
+が導かれ, 等号成立条件についても明らかになっている.
+
+また, 例えば測定誤差と反作用のトレードオフの不等式については, 
+\begin{equation}
+    \begin{aligned}
+        &\Bigl(\epsilon(A)\eta(B)+\epsilon(A)\sigma(B)+\sigma(A)\eta(B)\Bigr)^2\\
+        &\geq\Bigl(\epsilon(A)\sigma(B)+\sigma(A)\eta(B)\Bigr)^2\\
+        &\geq\epsilon(A)^2\sigma(B)^2+\sigma(A)^2\eta(B)^2\\
+    &+2\epsilon(A)\eta(B)\sqrt{\sigma(A)^2\sigma(B)^2-\left(\frac{1}{2}|\ev{[\hat
+{A},\hat{B}]}|\right)^2}\geq\frac{1}{4}\left|\ev{[\hat{A},\hat{B}]}\right|^2\\
+    \end{aligned}
+\end{equation}
+が成り立つことがわかっており(同時測定の測定誤差のトレードオフの方も同様), 小澤の不等式よりもブランシアードの不等式の方がタイトであることがわかる. 
+
+\input{Mochidsuki:uncertainty/部誌付録_望月.tex}
+
+
+\let\oldaddcontentsline\addcontentsline
+\renewcommand{\addcontentsline}[3]{}
+\begin{thebibliography}{99}
+\item[]本稿では主に\cite{sagawaueda}の内容を参考にした. より詳しい内容や本稿で触れなかった量子推定理論で定式化される不確定性関係についても詳しく書いてあるため, 興味ある方は読んでみることをおすすめする.
+\bibitem{sagawaueda}沙川貴大, 上田正仁『量子測定と量子制御』サイエンス社, 2016.
+\item[]小澤の不等式については主に\cite{kondo}, \cite{tanimurashogo}を参考にした. 
+\bibitem{kondo}近藤慶一『量子力学講義II-原子から量子もつれまで-』共立出版, 2023.
+\bibitem{tanimurashogo}谷村省吾『多様化する不確定性関係』名古屋大学学術機関リポジトリ, 2016.
+\\
+\item[] 量子力学の教科書として以下の\cite{simizu}-\cite{hottaqu}を挙げる. 
+本稿を読む上での量子力学の基礎についてはこれらの教科書等を参考にして欲しい. 
+\bibitem{simizu}清水明『新版 量子論の基礎-その本質のやさしい理解のために-』サイエンス社, 2003.
+\bibitem{junjohnsakurai}J.J. Sakurai, J. Napolitano著, 桜井明夫, 常次宏一訳『現代の量子力学(上) 第3版』吉岡書店, 2022.
+\bibitem{hottaqu}堀田昌寛『入門 現代の量子力学-量子情報・量子測定を中心として-』講談社, 2021.
+%\bibitem{M.Ozawa}M. Ozawa, Universally valid reformulation of the Heisenberg uncertainty principle on noise and  disturbance in measurement, Phys. Rev A \textbf{67}, 042105 (2003).
+%\bibitem{M.Ozawa2}M. Ozawa, Uncertainty relations for joint measurements of noncommuting observables, Phys Lett. A \textbf{320}, 367-374 (2004). 
+%\bibitem{M.Ozawa3}M. Ozawa, Uncertainty relations for noise and disturbance in generalized quantum measurements, Ann. Phys. \textbf{311}, 350-416 (2004).
+%\bibitem{Branciard}C. Branciard, Error-tradeoff and error-disturbance relations for incompatible quantum measurements, PNAS \textbf{110}, 6742-6747 (2013).  + Supporting Information. 
+%pdf版では\bibitem{M.Ozawa}以下を以下のhyperrefでurlをつけたものに置き換えて欲しい. 
+\bibitem{M.Ozawa}\href{https://journals.aps.org/pra/abstract/10.1103/PhysRevA.67.042105}{M. Ozawa, Universally valid reformulation of the Heisenberg uncertainty principle on noise and  disturbance in measurement, Phys. Rev A \textbf{67}, 042105 (2003).}
+\bibitem{M.Ozawa2}\href{https://www.sciencedirect.com/science/article/pii/S0375960103017560#section-cited-by}{M. Ozawa, Uncertainty relations for joint measurements of noncommuting observables, Phys Lett. A \textbf{320}, 367-374 (2004).}
+\bibitem{M.Ozawa3}\href{https://www.sciencedirect.com/science/article/pii/S0003491604000089}{M. Ozawa, Uncertainty relations for noise and disturbance in generalized quantum measurements, Ann. Phys. \textbf{311}, 350-416 (2004).}
+\bibitem{Branciard}\href{https://www.pnas.org/doi/abs/10.1073/pnas.1219331110}{C. Branciard, Error-tradeoff and error-disturbance relations for incompatible quantum measurements, PNAS \textbf{110}, 6742-6747 (2013).  + Supporting Information.}
+\end{thebibliography}
+\let\addcontentsline\oldaddcontentsline
+%10/2\end{document}
+

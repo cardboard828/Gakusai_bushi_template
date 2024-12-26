@@ -1,0 +1,135 @@
+\section{付録 量子力学の基礎}
+ここでは, 本稿を読む上で必要最低限の量子力学について述べる. しかし, 詳しい内容を全て書くと長くなるため, 詳しい内容については文献\cite{simizu}のような量子力学の教科書を参照していただきたい. 
+\subsection{量子力学における状態と物理量}
+まず初めに, 量子系の状態と物理量について説明する. 量子系の状態は, 量子系に対応するヒルベルト空間\footnote{複素数\(\mathbb{C}\)を係数とする, 内積が定義された完備なベクトル空間のこと.}のベクトルで記述される. \(\ket{\psi},\,\ket{\phi}\)をヒルベルト空間の元として, 両者の内積をディラックの記法を用いて\(\braket{\psi}{\phi}\in\mathbb{C}\)と表記する. このとき, ベクトル\(\ket{\psi}\)のノルム\(||\psi||\coloneqq\sqrt{\braket{\psi}{\psi}}\)が1となるような\(\ket{\psi}\)を\textbf{状態ベクトル}と呼び, このような状態ベクトルが量子系の状態を記述する. \footnote{\(\theta\)を任意の実数
+として\(e^{i\theta}\ket{\psi}\)のように\(e^{i\theta}\)の位相因子だけ異なる状態ベクトルについても\(\ket{\psi}\)と同じ状態を表す. あくまで状態ベクトル全体にかかるグローバルな位相因子が物理的な意味を持たないだけで, \(\ket{\psi_1}+e^{i\theta}\ket{\psi_2}\)のように状態の一部の成分のみにかかる位相因子は物理的な意味を持つ.} 
+
+また, ヒルベルト空間の正規直交完全系を導入する. \(\{\ket{\phi_k}\}\)が正規直交完全系であるとは, 
+\begin{equation}
+  \braket{\phi_k}{\phi_l}=\delta_{kl}
+\end{equation}
+かつ
+\begin{equation}
+  \sum_k\ket{\phi_k}\bra{\phi_k}=\hat{I}
+\end{equation}
+を満たすことをいう. ここで\(\delta_{kl}\)はクロネッカーのデルタである. そして, \(\ket{\phi_k}\bra{\phi_k}\)とは, ベクトルを\(\ket{\phi_k}\)に平行なベクトルに射影する射影演算子である. 例えば\(\ket{\psi}\)に作用させれば
+\begin{equation}
+  (\ket{\phi_k}\bra{\phi_k})\ket{\psi}=\braket{\phi_k}{\psi}\ket{\phi_k}\
+\end{equation}
+のように変換される. また, \(\hat{I}\)はヒルベルト空間の単位演算子である. 
+
+正規直交完全系を用いればヒルベルト空間の任意のベクトルを\(\{\phi_k\}\)で次のように展開できる:
+\begin{equation}
+  \begin{aligned}
+    \ket{\psi}&=\underbrace{\left(\sum_k\ket{\phi_k}\bra{\phi_k}\right)}_{=\hat{I}}\ket{\psi}\\
+    &=\sum_kc_k\ket{\phi_k}\hspace{4mm}(c_k\coloneqq\braket{\phi_k}{\psi}).
+  \end{aligned}
+\end{equation}
+正規直交完全系は有限次元のベクトル空間では正規直交基底を指す.
+
+ここで演算子のエルミート共役を定義する. ヒルベルト空間の演算子\(\hat{A}\)のエルミート共役\(\hat{A}^\dag\)とは, 任意の\(\ket{\psi},\,\ket{\phi}\)に対して
+\begin{equation}
+  \bra{\phi}\hat{A}^\dag\ket{\psi}=\bra{\psi}\hat{A}\ket{\phi}^*
+\end{equation}
+を満たすような演算子のことをいう(\(^*\)は複素共役を表す).特に\(\hat{A}=\hat{A}^\dag\)を満たすような演算子をエルミート演算子という\footnote{エルミート演算子のこの性質は自己共役性とも呼べるが, 空間が無限次元の場合はエルミート性と自己共役性は異なる概念を指す. スペクトル分解可能性を保証するのは自己共役性であり, エルミート性ではない. しかし, 本稿ではこれらを区別して呼ぶことはしないことにする.}. エルミート演算子は対角化可能で, 固有値は実数である. また, 異なる固有値に属する固有空間は互いに直交し, エルミート演算子\(\hat{A}\)は次のようにスペクトル分解できる:
+\begin{equation}
+  \hat{A}=\sum_k\alpha_k\hat{P}_k
+\end{equation}
+ここで, \(\alpha_k\)は\(k\neq l\)のとき\(\alpha_k\neq\alpha_l\)となる\(\hat{A}\)の固有値で, \(\hat{P}_k\)は\(\alpha_k\)に属する固有空間への射影演算子である. 射影演算子の持つ性質として次のものがある:
+\begin{align}
+  &\hat{P}_k\hat{P}_l=\delta_{kl}\hat{P}_k\hspace{2mm}(\text{固有空間同士の直交性})\\
+  &\sum_{k}\hat{P}_k=\hat{I}\hspace{8mm}(\text{完全性条件}).
+\end{align}
+射影演算子\(\hat{P}_k\)は固有値\(\alpha_k\)に属する固有空間の正規直交基底を\(\{\ket{\phi_{ki}}\}\)とすれば, \(\hat{P}_k=\sum_{i}\ket{\phi_{ki}}\bra{\phi_{ki}}\)と書ける. 
+
+ここで, 量子力学における物理量について考える. スピンなどの物理量はエルミート演算子であり, このようなエルミート演算子をオブザーバブル(観測可能量)と呼ぶ. 物理量を誤差なく測定したときに得られる値は対応するエルミート演算子の固有値であり実数値である. また, 状態\(\ket{\psi}\)においてオブザーバブル\(\hat{A}\)の固有値\(\alpha_k\)が得られる確率\(p_k\)は
+\begin{equation}
+  p_k\coloneqq\bra{\psi}\hat{P}_k\ket{\psi}
+\end{equation}
+で与えられ, これは\textbf{ボルンの確率規則}と呼ばれる. 射影演算子の完全性条件と確率の総和が1であることを考えると, 状態ベクトルの規格化と物理量のスペクトル分解可能性が必要なのも理解できるだろう. 物理量\(\hat{A}\) の期待値\(\ev{\hat{A}}\)は
+\begin{equation}
+  \ev{\hat{A}}=\sum_k\alpha_kp_k=\bra{\psi}\hat{A}\ket{\psi}
+\end{equation}
+となることがわかる. 
+
+\subsection{混合状態と密度演算子}
+ここでは, 混合状態と密度演算子についてみる. 混合状態とは物理量の測定をしたときに, 2つ以上の状態における測定値を混合したような確率分布が得られる状態をという. そうでない状態を純粋状態と呼ぶ. 
+
+混合状態は密度演算子\(\hat{\rho}\)を用いて記述され, 
+\begin{equation}
+  \hat{\rho}\coloneqq\sum_kq_k\ket{\psi_k}\bra{\psi_k}
+\end{equation}
+のような演算子で表される. ここで, \(\{\ket{\psi_k}\}\)は必ずしも直交している必要はなく, \(q_k\)は状態\(\ket{\psi_k}\)である確率で\(\sum_kq_k=1\)を満たす. 純粋状態は混合状態の特別な場合であり, 密度演算子は
+\begin{equation}
+  \hat{\rho}_{\si{pure}}=\ket{\psi}\bra{\psi}
+\end{equation}
+となる. 混合状態における物理量\(\hat{A}\)の測定を考える. 詳しいことは省略するが, 測定値\(\alpha_k\)を得る確率\(p_k\)は, 
+\begin{equation}
+  p_k=\tr[\hat{P}_k\hat{\rho}]
+\end{equation}
+であり, これが混合状態におけるボルンの確率規則である. また, \(\hat{A}\)の測定値の期待値は
+\begin{equation}
+  \ev{\hat{A}}=\sum_k\alpha_kp_k=\tr[\hat{A}\hat{\rho}]
+\end{equation}
+となる.\footnote{\(\tr[\cdot]\)はトレースであり, 対角和を意味する. 具体的には演算子\(\hat{C}\)のトレースは, 正規直交完全系\(\{\ket{\phi_k}\}\)を用いて, 
+\begin{equation}
+  \tr[\hat{C}]=\sum_k\bra{\phi_k}\hat{C}\ket{\phi_k}
+\end{equation}
+と書ける. 重要な性質としてトレースは基底の取り方によらない. 他にも巡回性\(\tr[\hat{A}\hat{B}]=\tr[\hat{B}\hat{A}]\)(あくまで巡回性であって交換性ではない)がある. また巡回性は空間が無限次元だと必ずしも成り立たない.}
+
+密度演算子の一般的な性質を述べると, 密度演算子は定義からわかるようにエルミート演算子であり, 特に正値演算子である.\footnote{任意のベクトル\(\ket{\psi}\)について\(\bra{\psi}\hat{A}\ket{\psi}\geq0\)を満たす演算子\(\hat{A}\)を正値演算子といい, これはエルミート演算子かつ固有値が全て非負である.} このことが, 先で定義した確率\(q_l\)の非負性を保証する. また, ボルンの確率規則からわかるように\(\tr[\hat{\rho}]=1\)である.\\
+
+混合状態での議論は純粋状態を含むため, 以下では混合状態で議論する.
+\subsection{合成系の状態}
+次に, 合成系の状態を考える. 2つの量子系A, Bがあり, ヒルベルト空間がそれぞれ\(\mathcal{H}_A,\,\mathcal{H}_B\)であるとき, 合成系ABのヒルベルト空間は, テンソル積を用いて\(\mathcal{H}_A\otimes\mathcal{H}_B\)となる. 系A, 系Bの状態が\(\hat{\rho}_A,\,\hat{\rho}_B\)であるときは, 合成系ABの状態は
+\begin{equation}
+  \hat{\rho}_{AB}=\hat{\rho}_A\otimes\hat{\rho}_B
+\end{equation}
+で与えられる. このように密度演算子のテンソル積1つで書けるような状態を積状態(セパラブル状態の特別な場合)という. このような状態では状態に相関がない. また, 以下のように密度演算子のテンソル積の和の形で書ける状態をセパラブル状態という:
+\begin{equation}
+  \hat{\rho}_{AB}=\sum_{i}q_i\hat{\rho}_A^{(i)}\otimes\hat{\rho}_B^{(i)}. 
+\end{equation}
+このように複数の積状態の古典的な確率混合で書けるとき, 状態に古典相関があるという. 
+
+セパラブル状態の形で書けない場合, 状態に\textbf{量子相関}がある, あるいは状態は\textbf{エンタングル}しているという\footnote{2キュービット系におけるベル状態の1つ
+\begin{equation}
+\hat{\rho}_{AB}=\frac{\ket{0}\ket{0}\bra{0}\bra{0}+\ket{1}\ket{1}\bra{1}\bra{1}+\ket{0}\ket{0}\bra{1}\bra{1}+\ket{1}\ket{1}\bra{0}\bra{0}}{2}  
+\end{equation} 
+はエンタングルした状態である.}.
+
+また, 系Aの演算子\(\hat{C}\)と系Bの演算子\(\hat{D}\)のテンソル積で表される\(\hat{C}\otimes\hat{D}\)は\((\hat{C}\otimes\hat{D})\ket{\psi_A}\otimes\ket{\psi_B}=(\hat{C}\ket{\psi_A})\otimes(\hat{D}\ket{\psi_B})\)のように作用する. 合成系の演算子は一般に系A, Bのそれぞれの正規直交完全系\(\{\ket{\phi_k}\},\,\{\ket{\psi_k}\}\)を用いて\(\hat{A}=\sum_{ijkl}a_{ijkl}\ket{\phi_i}\bra*{\phi _j}\otimes\ket{\psi_k}\bra{\psi_l}\) (\(a_{ijkl}\)は複素数)と書くことができ, \(\ket{\psi_A}\otimes\ket{\psi_B}\)に対しては, 
+\begin{equation}
+  \begin{aligned}
+      \hat{A}\ket{\psi_A}\otimes\ket{\psi_B}&=\sum_{ijkl}a_{ijkl}\ket{\phi_i}\braket*{\phi _j}{\psi_A}\otimes\ket{\psi_k}\braket{\psi_l}{\psi_B}\\
+      &=\sum_{ijkl}a_{ijkl}\braket*{\phi _j}{\psi_A}\braket{\psi_l}{\psi_B}\ket{\phi_i}\otimes\ket{\psi_k}
+    \end{aligned}
+\end{equation}
+のように作用する. また, 部分系のみに作用する演算子, 例えば合成系ABの系Aのみに作用するような演算子\(\hat{C}\)を合成系の演算子に拡張すると\(\hat{C}\otimes\hat{I}\)のようになる.
+
+また, 合成系の演算子\(\hat{A}\)の\textbf{部分トレース}を次のように部分系についてのみトレースの計算をする操作として定義する. 部分系Bについての部分トレースは
+\begin{equation}
+  \tr_{B}[\hat{A}]=\sum_k\bra{\psi_k}\hat{A}\ket{\psi_k}=\sum_{ij}a_{ijkk}\ket{\phi_i}\bra*{\phi_j}
+\end{equation}
+のように計算される(Aでも同様). また, \(\tr_{AB}[\cdot]=\tr_{A}[\tr_{B}[\cdot]]=\tr_B[\tr_A[\cdot]]\)となる.
+
+合成系が与えられたときの部分系の状態は部分トレースを用いて定義され, 合成系ABの系Aの状態は
+\begin{equation}
+  \hat{\rho}_{A}\coloneqq\tr_{B}[\hat{\rho}_{AB}]
+\end{equation}
+となる(Bの状態も同様).
+
+\subsection{量子系の時間発展}
+最後に量子系の状態の時間発展について見るが, 簡単に済ませよう. 
+
+孤立系を考えると, その時間発展はユニタリ演算子\footnote{\(\hat{U}\hat{U}^\dag=\hat{U}^\dag\hat{U}=\hat{I}\)となる演算子のことをいう.}\(\hat{U}\)を用いて記述される.  
+
+また, 量子系の時間発展にはいくつかの描像があって, シュレーディンガー描像とハイゼンベルク描像が主な描像であり, これらの描像は等価な結果を与えることが知られている.
+
+シュレーディンガー描像においては状態が時間発展すなわち\(\hat{\rho}\)(あるいは\(\ket{\psi}\))が時間発展し, ユニタリ時間発展すると\(\hat{U}\hat{\rho}\hat{U}^\dag\) (\(\hat{U}\ket{\psi}\))となる. シュレーディンガー描像では, 物理量は時間発展しないと考える.
+
+ハイゼンベルク描像では, 状態ではなく物理量が時間発展すると考える. 物理量\(\hat{A}\)が時間発展すると\(\hat{U}^\dag\hat{A}\hat{U}\)のように時間発展する. つまりシュレーディンガー描像では物理量の固有ベクトルは変化しないが, ハイゼンベルグ描像では変化する.
+
+注意していただきたいのは, システムが孤立系の場合はユニタリ時間発展をするが, 間接測定過程のように  
+システムが外部の系と相互作用するような場合は, 全系の時間発展はユニタリだが, システムの時間発展はユニタリではなくなる. 
+
+本稿においては時間発展演算子の具体的な表式や時間発展を記述する方程式には興味がないため, ここではそれらについては見ない. そのため, 参考文献に挙げた量子力学の教科書を参照してほしい.
