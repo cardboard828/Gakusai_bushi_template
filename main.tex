@@ -14,24 +14,16 @@
 %タイトル
 \input{Title/title.tex}
 
+%序文スタート
 \frontmatter
 
-%はじめに、目次の体裁を司っている
-\titleformat{\chapter}[hang]{\mcfamily\filcenter}{}{0pt}{\Large #1}
-
+\input{Hajimeni/frontmatter_style.tex}
 %はじめに
-\chapter*{はじめに}
 \input{Hajimeni/hajimeni.tex}
-
-%目次-----------------------------------------------------------------------------------------------------------------------------------------
-\renewcommand{\contentsname}{\makebox[\linewidth]{\hfill 目\hspace{0.8cm}次 \hfill}}
-%Partを中央寄せする魔法
-\input{TOC_Part.tex}
-\setcounter{tocdepth}{0}
+%目次
+\input{TOC/TOC_style}
 \tableofcontents
 
-
-%---------------------------------------------------------------------------------------------------------------------------------------
 
 %本文スタート
 \mainmatter

@@ -35,6 +35,18 @@ title.texの中の\includegraphics{}に読み込む画像のパスを書くこ�
 画像は画面いっぱいいっぱいに出力されるようにしています。
 [TeXでjsbookの表紙いっぱいに画像を設定する](https://qiita.com/gatosyocora/items/396d11b94d9201c61094)を参考にしました。
 
+### 序文
+Hajimeniフォルダの中にあるhajimeni.texをmain.texで読み込むことで序文を表示します。
+hajimeni.texの中身はchapter*扱いなので，章題を変更することで「はじめに」の部分を変更できます。
+frontmatter.texではじめにと目次の体裁を制御しています。
+デフォルトではmcfamilyで中央に表示するようにしています。
+また，この部分はヘッダーがページ番号になるようにしています。
+
+### 目次(TOC)
+Table Of Contents (略してTOC) はいつも通り\tableofcontentsコマンドで出力するのですが，その体裁を整えるためにTOCフォルダの中にあるTOC_style.texを読み込んでいます。
+このファイルでは「目次」の字の間のスペースと，\partのTOCが中央に表示されるように制御しています。
+
+
 
 
 

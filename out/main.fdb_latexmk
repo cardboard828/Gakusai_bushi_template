@@ -1,11 +1,11 @@
 # Fdb version 4
-["dvipdf"] 1735228054.95795 "out/main.dvi" "out/main.pdf" "out/main" 1735228057.7335 0
-  "out/main.dvi" 1735228054.83819 105240 df7d1b6c00e1966381d685b2e5e7fa68 "latex"
+["dvipdf"] 1735280011.26311 "out/main.dvi" "out/main.pdf" "out/main" 1735280013.99035 0
+  "out/main.dvi" 1735280011.13957 105200 57c38905b2ad8b8369729bff629a867a "latex"
   (generated)
   "out/main.pdf"
   (rewritten before read)
-["latex"] 1735228052.96215 "/Users/yuichimori/gakusai_bushi_template/main.tex" "out/main.dvi" "main" 1735228057.73039 0
-  "/Users/yuichimori/gakusai_bushi_template/main.tex" 1735228050.47639 1947 ff628cee0738084fc34526b5ff0d6d71 ""
+["latex"] 1735280009.17461 "/Users/yuichimori/gakusai_bushi_template/main.tex" "out/main.dvi" "main" 1735280013.98716 0
+  "/Users/yuichimori/gakusai_bushi_template/main.tex" 1735279733.54053 1563 87a33f574f7871ca6eba5cab887a6d0b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1463434352 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1463434352 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -233,19 +233,21 @@
   "/usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf" 1727217670 42021 a58d36c7ede3d2fc9f93da62d691ddff ""
   "/usr/local/texlive/2024/texmf-var/web2c/euptex/platex.fmt" 1730913816 3284893 d3985d12300aebd7030789e6647de859 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Hajimeni/hajimeni.tex" 1735220267.06069 3841 ba0082f7ca1da1f2d15cab9c8f3733ee ""
+  "Hajimeni/frontmatter_style.tex" 1735279177.72096 342 d95b526e28a9ee756a83d8585837a4d7 ""
+  "Hajimeni/hajimeni.tex" 1735279205.60507 3866 b4d813d1b84b6b40288ca843647e67ab ""
   "Mochidsuki:uncertainty/Quantum Measurement and Uncertainty Relations_Shota Mochizuki.tex" 1735211188.26606 31060 d7965120f5c06d58a24b3ac084b4287c ""
   "Mochidsuki:uncertainty/部誌付録_望月.tex" 1735211188.26627 13356 a73d3baf582037b08fb9de3f283b97b5 ""
   "Okudsuke/okudsuke.tex" 1735211188.41589 611 864c48943bfca01e8bbf11fc5be58121 ""
-  "TOC_Part.tex" 1735211188.26871 494 6626837f9c8fb511425f37094119bad7 ""
+  "TOC/TOC_Part.tex" 1735211188.26871 494 6626837f9c8fb511425f37094119bad7 ""
+  "TOC/TOC_style" 1735280003.05265 209 c50db7e6f73b16bd26e13107f1da8358 ""
   "Title/Title_Zundazemi2.png" 1735211188.41508 2368824 adb4336e065cd5b9f882b6fa17f7dd0a ""
   "Title/define_includefullgraphics.tex" 1735211188.4157 891 8345a6ba991dd160d2df672d6fa314bc ""
   "Title/title.tex" 1735220329.81672 152 898a0637600166c1d4311ea9e02f62c3 ""
-  "main.tex" 1735228050.47639 1947 ff628cee0738084fc34526b5ff0d6d71 ""
-  "out/main.aux" 1735228054.83632 3551 7656de0a6a06fab967b29042a5a6a26a "latex"
-  "out/main.out" 1735228054.83784 401 a6fa863ac00ada4a042636fdbe01eb6c "latex"
-  "out/main.toc" 1735228054.83813 1918 e22fedf488c6f0d91176ea8326a48af1 "latex"
-  "preamble_p_book.tex" 1735221417.01807 4879 4bbde4b5650623938423ba21b4aba2c7 ""
+  "main.tex" 1735279733.54053 1563 87a33f574f7871ca6eba5cab887a6d0b ""
+  "out/main.aux" 1735280011.13776 3551 7656de0a6a06fab967b29042a5a6a26a "latex"
+  "out/main.out" 1735280011.13923 401 a6fa863ac00ada4a042636fdbe01eb6c "latex"
+  "out/main.toc" 1735280011.13952 1918 e22fedf488c6f0d91176ea8326a48af1 "latex"
+  "preamble_p_book.tex" 1735278766.32769 4899 bc7c51d75e6b3f9d9112638f6bba57f7 ""
   "まとめ/Mochi:quant.tex" 1735211188.41783 754 b729c86c0c12f14446c1742efde5b1be ""
   (generated)
   "out/main.aux"
