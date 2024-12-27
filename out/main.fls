@@ -172,10 +172,6 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/carlisle/remreset.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/carlisle/remreset.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tools/tabularx.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tools/tabularx.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty
@@ -348,6 +344,9 @@ OUTPUT out/main.dvi
 INPUT ./Hajimeni/frontmatter_style.tex
 INPUT ./Hajimeni/frontmatter_style.tex
 INPUT Hajimeni/frontmatter_style.tex
+INPUT ./Header/only_pages.tex
+INPUT ./Header/only_pages.tex
+INPUT Header/only_pages.tex
 INPUT ./Hajimeni/hajimeni.tex
 INPUT ./Hajimeni/hajimeni.tex
 INPUT Hajimeni/hajimeni.tex
@@ -375,6 +374,12 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/japanese-otf/nmlgothrn-v.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/japanese-otf/nmlgothrn-h.tfm
 OUTPUT out/main.toc
+INPUT ./Articles/articles_style.tex
+INPUT ./Articles/articles_style.tex
+INPUT Articles/articles_style.tex
+INPUT ./Header/section_subsection.tex
+INPUT ./Header/section_subsection.tex
+INPUT Header/section_subsection.tex
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/japanese-otf/nmlminrn-v.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/japanese-otf/nmlminrn-h.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
@@ -384,18 +389,32 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmss17.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/japanese-otf/nmlgothrn-v.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/japanese-otf/nmlgothrn-h.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmss17.tfm
-INPUT ./まとめ/Mochi:quant.tex
-INPUT ./まとめ/Mochi:quant.tex
-INPUT �ޤȤ�/Mochi:quant.tex
+INPUT ./Articles/combine/Combine_sample.tex
+INPUT ./Articles/combine/Combine_sample.tex
+INPUT Articles/combine/Combine_sample.tex
+INPUT Header/only_pages.tex
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/japanese-otf/nmlminrn-v.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/japanese-otf/nmlminrn-h.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
-INPUT ./Mochidsuki:uncertainty/Quantum Measurement and Uncertainty Relations_Shota Mochizuki.tex
-INPUT ./Mochidsuki:uncertainty/Quantum Measurement and Uncertainty Relations_Shota Mochizuki.tex
-INPUT Mochidsuki:uncertainty/Quantum Measurement and Uncertainty Relations_Shota Mochizuki.tex
+INPUT ./Articles/sample/sample.tex
+INPUT ./Articles/sample/sample.tex
+INPUT Articles/sample/sample.tex
+INPUT Header/section_subsection.tex
+INPUT ./Articles/combine/Combine_sample2.tex
+INPUT ./Articles/combine/Combine_sample2.tex
+INPUT Articles/combine/Combine_sample2.tex
+INPUT ./Articles/sample2/sample2.tex
+INPUT ./Articles/sample2/sample2.tex
+INPUT Articles/sample2/sample2.tex
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/japanese-otf/nmlgothrn-v.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/japanese-otf/nmlgothrn-h.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
+INPUT ./Articles/combine/Combine_Mochidsuki_uncertainty.tex
+INPUT ./Articles/combine/Combine_Mochidsuki_uncertainty.tex
+INPUT Articles/combine/Combine_Mochidsuki_uncertainty.tex
+INPUT ./Articles/Mochidsuki_uncertainty/Quantum Measurement and Uncertainty Relations_Shota Mochizuki.tex
+INPUT ./Articles/Mochidsuki_uncertainty/Quantum Measurement and Uncertainty Relations_Shota Mochizuki.tex
+INPUT Articles/Mochidsuki_uncertainty/Quantum Measurement and Uncertainty Relations_Shota Mochizuki.tex
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
@@ -463,9 +482,9 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/boondox/BOONDOX-r-ds.t
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/boondox/BOONDOX-r-ds.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/boondox/BOONDOX-r-ds.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/boondox/BOONDOX-r-ds.tfm
-INPUT ./Mochidsuki:uncertainty/部誌付録_望月.tex
-INPUT ./Mochidsuki:uncertainty/部誌付録_望月.tex
-INPUT Mochidsuki:uncertainty/������Ͽ_˾��.tex
+INPUT ./Articles/Mochidsuki_uncertainty/部誌付録_望月.tex
+INPUT ./Articles/Mochidsuki_uncertainty/部誌付録_望月.tex
+INPUT Articles/Mochidsuki_uncertainty/������Ͽ_˾��.tex
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/japanese-otf/nmlminrn-v.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/boondox/BOONDOX-r-calo.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/boondox/BOONDOX-r-calo.tfm

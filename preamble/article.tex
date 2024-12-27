@@ -1,4 +1,9 @@
 
+%ヘッダー、フッター用
+%section構造が無い用のヘッダーとsection構造がある用のヘッダー2種類作っていて，ともにHeaderフォルダーに格納
+%\frontmatterでは前者がデフォ，\mainmatterでは後者がデフォと考えています。
+\usepackage{fancyhdr}
+
 %見出しの体裁のカスタマイズ用
 \usepackage[explicit]{titlesec}
 
@@ -43,5 +48,14 @@
 
 %subsubsectionまで使えるようにする
 \setcounter{secnumdepth}{3}
+
+%白紙ページ生成用
+%\afterpage{\blankpage}で１ページ分白紙ページを生成できる
+\usepackage{afterpage}
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{0}%
+    \newpage}
 
 

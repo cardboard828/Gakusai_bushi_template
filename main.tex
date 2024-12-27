@@ -2,12 +2,6 @@
 
 \input{preamble_p_book.tex}
 
-%sectionリセット
-\newcounter{hoge}%%%(*1)
-
-\makeatletter
-\@addtoreset{section}{hoge}%%%(*2)
-\makeatother
 
 \begin{document}
 
@@ -27,34 +21,18 @@
 
 %本文スタート
 \mainmatter
-%chapter終了後の奇数始まりを削除
-\let\originalchapter=\chapter
-\def\chapter{\let\cleardoublepage\clearpage\originalchapter}
-
-%活動紹介---------------------------------------------------------------------------------------------------------------------------------------
-
-\pagestyle{fancy}
-\fancyhf{}
-\renewcommand{\sectionmark}[1]{\markboth{\thesection #1}{}}
-\renewcommand{\subsectionmark}[1]{\markright{\thesubsection #1}}
-\fancyhead{\gdef\headrulewidth{.0pt}}
-\fancyhead[ER]{\leftmark}
-\fancyhead[EL]{\thepage}
-\fancyhead[OL]{\rightmark}
-\fancyhead[OR]{\thepage}
-\cfoot{}
+\input{Articles/articles_style.tex}
 
 \part{活動紹介}\label{Part:Katsudo}
-
-
-%個人記事---------------------------------------------------------------------------------------------------------------------------------------
+\input{Articles/combine/Combine_sample.tex}
+\input{Articles/combine/Combine_sample2.tex}
 
 %奇数ページスタートのために手動で調節...
-\afterpage{\blankpage}
+% \afterpage{\blankpage}
 
 \part{個人記事}\label{Part:KOJIN}
 
-\input{まとめ/Mochi:quant.tex}
+\input{Articles/combine/Combine_Mochidsuki_uncertainty.tex}
 
 \backmatter
 

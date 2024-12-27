@@ -1,13 +1,7 @@
 
 
 %はじめにと目次にページ番号以外のヘッダー・フッターは不要なため
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead{\gdef\headrulewidth{.0pt}}
-\fancyhead[EL]{\thepage}
-\fancyhead[OR]{\thepage}
-\cfoot{}
-
+\input{Header/only_pages.tex}
 
 %はじめに、目次の体裁を司っている
 \titleformat{\chapter}[hang]{\mcfamily\filcenter}{}{0pt}{\Large #1}
