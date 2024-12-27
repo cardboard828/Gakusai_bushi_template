@@ -1,11 +1,11 @@
 # Fdb version 4
-["dvipdf"] 1735288110.85281 "out/main.dvi" "out/main.pdf" "out/main" 1735288113.44977 0
-  "out/main.dvi" 1735288110.74393 48276 bfa7886c2894d04b7c871b01dd6bf699 "latex"
+["dvipdf"] 1735288371.86716 "out/main.dvi" "out/main.pdf" "out/main" 1735288374.43969 0
+  "out/main.dvi" 1735288371.75811 48276 0d95639afb56416d35d739dce13df1dc "latex"
   (generated)
   "out/main.pdf"
   (rewritten before read)
-["latex"] 1735288108.88365 "/Users/yuichimori/gakusai_bushi_template/main.tex" "out/main.dvi" "main" 1735288113.44604 0
-  "/Users/yuichimori/gakusai_bushi_template/main.tex" 1735287869.40444 708 decd42439385565cc28ae17a99964551 ""
+["latex"] 1735288370.04626 "/Users/yuichimori/gakusai_bushi_template/main.tex" "out/main.dvi" "main" 1735288374.43636 0
+  "/Users/yuichimori/gakusai_bushi_template/main.tex" 1735288367.90812 751 3004119077316c74bcbac5687d991ae1 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1463434352 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1463434352 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -230,10 +230,10 @@
   "Title/Title_Zundazemi2.png" 1735211188.41508 2368824 adb4336e065cd5b9f882b6fa17f7dd0a ""
   "Title/define_includefullgraphics.tex" 1735211188.4157 891 8345a6ba991dd160d2df672d6fa314bc ""
   "Title/title.tex" 1735220329.81672 152 898a0637600166c1d4311ea9e02f62c3 ""
-  "main.tex" 1735287869.40444 708 decd42439385565cc28ae17a99964551 ""
-  "out/main.aux" 1735288110.74268 1775 6fe46c10d6f5ec8361221153df900c15 "latex"
-  "out/main.out" 1735288110.7436 799 d6253768404411ca3caa50b16e9ae798 "latex"
-  "out/main.toc" 1735288110.74388 1002 e033c77962445464582b9dbcf021fe3d "latex"
+  "main.tex" 1735288367.90812 751 3004119077316c74bcbac5687d991ae1 ""
+  "out/main.aux" 1735288371.7567 1775 6fe46c10d6f5ec8361221153df900c15 "latex"
+  "out/main.out" 1735288371.75776 799 d6253768404411ca3caa50b16e9ae798 "latex"
+  "out/main.toc" 1735288371.75804 1002 e033c77962445464582b9dbcf021fe3d "latex"
   "preamble/article.tex" 1735284154.82529 2616 f7fb53e3f7994e4693fc708b797434ec ""
   "preamble/graphics.tex" 1735285596.13142 434 837606b964bb6a4495d39099f04df8bf ""
   "preamble/hyperref.tex" 1735221115.237 707 bd68f4e92d7e1cc915118996840ecee5 ""
