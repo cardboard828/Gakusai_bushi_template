@@ -11,19 +11,17 @@
 
 \begin{document}
 
-%タイトル---------------------------------------------------------------------------------------------------------------------------------------
+%タイトル
 \input{Title/title.tex}
 
 \frontmatter
 
-%序文--------------------------------------------------------------------------------------------------------------------------------------
-
 %はじめに、目次の体裁を司っている
 \titleformat{\chapter}[hang]{\mcfamily\filcenter}{}{0pt}{\Large #1}
 
-
+%はじめに
 \chapter*{はじめに}
-\input{はじめに/hajimeni.tex}
+\input{Hajimeni/hajimeni.tex}
 
 %目次-----------------------------------------------------------------------------------------------------------------------------------------
 \renewcommand{\contentsname}{\makebox[\linewidth]{\hfill 目\hspace{0.8cm}次 \hfill}}
@@ -68,6 +66,6 @@
 
 \backmatter
 
-\input{おくづけ/okudsuke.tex}
+\input{Okudsuke/okudsuke.tex}
 
 \end{document}

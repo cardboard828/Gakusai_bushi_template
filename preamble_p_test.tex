@@ -1,0 +1,38 @@
+
+
+%-----グラフィック------------------------------------------------------
+
+
+
+%ヘッダー、フッターの設定
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\renewcommand{\sectionmark}[1]{\markboth{\thesection #1}{}}
+\renewcommand{\subsectionmark}[1]{\markright{\thesubsection #1}}
+\fancyhead{\gdef\headrulewidth{.0pt}}
+\fancyhead[ER]{\leftmark}
+\fancyhead[EL]{\thepage}
+\fancyhead[OL]{\rightmark}
+\fancyhead[OR]{\thepage}
+\cfoot{}
+
+
+%最悪なんだけど、何用なのか忘れてしまった
+% \usepackage[pass]{geometry}
+
+
+%白紙ページ生成用
+\usepackage{afterpage}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{0}%
+    \newpage}
+
+
+
+
+
+
