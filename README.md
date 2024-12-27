@@ -46,6 +46,25 @@ frontmatter.texではじめにと目次の体裁を制御しています。
 Table Of Contents (略してTOC) はいつも通り\tableofcontentsコマンドで出力するのですが，その体裁を整えるためにTOCフォルダの中にあるTOC_style.texを読み込んでいます。
 このファイルでは「目次」の字の間のスペースと，\partのTOCが中央に表示されるように制御しています。
 
+### 記事
+一人分の記事のtexファイルとその記事で使われている画像等が入ったフォルダをArticlesフォルダに入れてください。
+Articleフォルダ内のcombineフォルダに，記事と全体を繋ぐtexファイルをcombine_sample.texのように記述して，そのcombine_hogehoge.texファイルをmain.texで読み込んでください。
+本来，記事は少なくともsectionの構造をもつものとして体裁を整えていますが，**万が一sectionの構造すら持たない文章だけの記事の場合**はcombineフォルダ内のcombine_sanple.texのようにはじめに\input{Header/only_pages.tex}, 終わりに\input{Header/section_subsection.tex}を読み込むことを推奨します。
+
+また，参考文献はArticles/sankoubunken_template/sankoubunken_template.tex　のように記述してください。いつものthebibliographyの上下をこのテンプレのように挟んでください。
+
+また，Articleフォルダ内のarticles_style.texで記事の体裁について記述しています。
+sectionの番号を記事ごとにリセットするためのコードを元に定義しています。
+また，デフォルトではchapterは終わるごとに奇数ページ始まりになるのですが，それをやめてchapter終わり直後のページから次のchapterが始まるようにしています。
+
+また，白紙ページを挿入したくなった場合は（例えばPartを奇数ページ始まりにしたい場合）手動で\afterpage{\blankpage}と記述してください。
+このコードはpreambleフォルダのarticle.texで定義しています。
+
+###奥付
+奥付もかけます。OkudsukeフォルダのOkudsuke.texに倣って必要事項を記入してください。
+
+
+
 
 
 

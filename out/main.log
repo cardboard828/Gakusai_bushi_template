@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.euc) (TeX Live 2024) (preloaded format=platex 2024.11.7)  27 DEC 2024 16:16
+This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.euc) (TeX Live 2024) (preloaded format=platex 2024.11.7)  27 DEC 2024 17:28
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -49,7 +49,7 @@ LaTeX Info: Redefining \LaTeX on input line 135.
 LaTeX Info: Redefining \LaTeXe on input line 188.
 )
 \heisei=\count270
-) (./preamble_p_book.tex (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+) (./preamble/preamble.tex (./preamble/graphics.tex (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
@@ -325,129 +325,106 @@ Library (tcolorbox): 'tcbraster.code.tex' version '6.4.1'
 \c@tcbrasterrow=\count298
 \c@tcbrasternum=\count299
 \c@tcbraster=\count300
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count301
+\float@exts=\toks34
+\float@box=\box93
+\@float@everytoks=\toks35
+\@floatcapt=\box94
+) (./preamble/article.tex (/usr/local/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2024/07/23 v4.3.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip52
+\f@nch@O@elh=\skip53
+\f@nch@O@erh=\skip54
+\f@nch@O@olh=\skip55
+\f@nch@O@orh=\skip56
+\f@nch@O@elf=\skip57
+\f@nch@O@erf=\skip58
+\f@nch@O@olf=\skip59
+\f@nch@O@orf=\skip60
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2023/10/27 v2.16 Sectioning titles
-\ttl@box=\box93
-\beforetitleunit=\skip52
-\aftertitleunit=\skip53
+\ttl@box=\box95
+\beforetitleunit=\skip61
+\aftertitleunit=\skip62
 \ttl@plus=\dimen272
 \ttl@minus=\dimen273
-\ttl@toksa=\toks34
+\ttl@toksa=\toks36
 \titlewidth=\dimen274
 \titlewidthlast=\dimen275
 \titlewidthfirst=\dimen276
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2024/07/23 v4.3.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip54
-\f@nch@O@elh=\skip55
-\f@nch@O@erh=\skip56
-\f@nch@O@olh=\skip57
-\f@nch@O@orh=\skip58
-\f@nch@O@elf=\skip59
-\f@nch@O@erf=\skip60
-\f@nch@O@olf=\skip61
-\f@nch@O@orf=\skip62
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/carlisle/remreset.sty
 
 Package remreset Warning: The remreset package is obsolete:
 (remreset)                \@removefromreset is defined.
 
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/tabularx.sty
-Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
-(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty
-Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
-\col@sep=\dimen277
-\ar@mcellbox=\box94
-\extrarowheight=\dimen278
-\NC@list=\toks35
-\extratabsurround=\skip63
-\backup@length=\skip64
-\ar@cellbox=\box95
-)
-\TX@col@width=\dimen279
-\TX@old@table=\dimen280
-\TX@old@col=\dimen281
-\TX@target=\dimen282
-\TX@delta=\dimen283
-\TX@cols=\count301
-\TX@ftn=\toks36
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/mathalpha/mathalfa.sty) (/usr/local/texlive/2024/texmf-dist/tex/latex/mathalpha/mathalpha.sty
-Package: mathalpha 2021/11/18 - 1.143mathalpha (License LPPL) Michael Sharpe
-`mathalpha' v1.143, 2021/11/18, a renaming of mathalfa (msharpe) (/usr/local/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
-(/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks37
-\XKV@tempa@toks=\toks38
-)
-\XKV@depth=\count302
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-LaTeX Font Info:    Overwriting math alphabet `\mathbb' in version `bold'
-(Font)                  U/BOONDOX-ds/m/n --> U/BOONDOX-ds/b/n on input line 209.
-LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 554.
-LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `bold'
-(Font)                  U/BOONDOX-calo/m/n --> U/BOONDOX-calo/b/n on input line 556.
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
+\AP@output=\toks37
+\AP@partial=\box96
+\AP@footins=\box97
+)) (./preamble/math.tex (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2024/10/30 v2.17s AMS math features
-\@mathmargin=\skip65
+\@mathmargin=\skip63
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks39
-\ex@=\dimen284
+\@emptytoks=\toks38
+\ex@=\dimen277
 )) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen285
+\pmbraise@=\dimen278
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count303
+\inf@bad=\count302
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count304
-\leftroot@=\count305
+\uproot@=\count303
+\leftroot@=\count304
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count306
-\DOTSCASE@=\count307
+\classnum@=\count305
+\DOTSCASE@=\count306
 LaTeX Info: Redefining \ldots on input line 502.
 LaTeX Info: Redefining \dots on input line 505.
 LaTeX Info: Redefining \cdots on input line 638.
-\Mathstrutbox@=\box96
-\strutbox@=\box97
+\Mathstrutbox@=\box98
+\strutbox@=\box99
 LaTeX Info: Redefining \big on input line 740.
 LaTeX Info: Redefining \Big on input line 741.
 LaTeX Info: Redefining \bigg on input line 742.
 LaTeX Info: Redefining \Bigg on input line 743.
-\big@size=\dimen286
+\big@size=\dimen279
 LaTeX Font Info:    Redeclaring font encoding OML on input line 761.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 762.
-\macc@depth=\count308
+\macc@depth=\count307
 LaTeX Info: Redefining \bmod on input line 923.
 LaTeX Info: Redefining \pmod on input line 928.
 LaTeX Info: Redefining \smash on input line 958.
 LaTeX Info: Redefining \relbar on input line 988.
 LaTeX Info: Redefining \Relbar on input line 989.
-\c@MaxMatrixCols=\count309
+\c@MaxMatrixCols=\count308
 \dotsspace@=\muskip17
-\c@parentequation=\count310
-\dspbrk@lvl=\count311
-\tag@help=\toks40
-\row@=\count312
-\column@=\count313
-\maxfields@=\count314
-\andhelp@=\toks41
-\eqnshift@=\dimen287
-\alignsep@=\dimen288
-\tagshift@=\dimen289
-\tagwidth@=\dimen290
-\totwidth@=\dimen291
-\lineht@=\dimen292
-\@envbody=\toks42
-\multlinegap=\skip66
-\multlinetaggap=\skip67
-\mathdisplay@stack=\toks43
+\c@parentequation=\count309
+\dspbrk@lvl=\count310
+\tag@help=\toks39
+\row@=\count311
+\column@=\count312
+\maxfields@=\count313
+\andhelp@=\toks40
+\eqnshift@=\dimen280
+\alignsep@=\dimen281
+\tagshift@=\dimen282
+\tagwidth@=\dimen283
+\totwidth@=\dimen284
+\lineht@=\dimen285
+\@envbody=\toks41
+\multlinegap=\skip64
+\multlinetaggap=\skip65
+\mathdisplay@stack=\toks42
 LaTeX Info: Redefining \[ on input line 2972.
 LaTeX Info: Redefining \] on input line 2973.
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
@@ -461,24 +438,24 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (/usr/local/texlive/2024/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks44
-\thm@bodyfont=\toks45
-\thm@headfont=\toks46
-\thm@notefont=\toks47
-\thm@headpunct=\toks48
-\thm@preskip=\skip68
-\thm@postskip=\skip69
-\thm@headsep=\skip70
-\dth@everypar=\toks49
+\thm@style=\toks43
+\thm@bodyfont=\toks44
+\thm@headfont=\toks45
+\thm@notefont=\toks46
+\thm@headpunct=\toks47
+\thm@preskip=\skip66
+\thm@postskip=\skip67
+\thm@headsep=\skip68
+\dth@everypar=\toks48
 )
-\c@dfn=\count315
-\c@prop=\count316
-\c@lem=\count317
-\c@thm=\count318
-\c@cor=\count319
-\c@rem=\count320
-\c@fact=\count321
-\c@e.g.=\count322
+\c@dfn=\count314
+\c@prop=\count315
+\c@lem=\count316
+\c@thm=\count317
+\c@cor=\count318
+\c@rem=\count319
+\c@fact=\count320
+\c@e.g.=\count321
 (/usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup7
@@ -497,54 +474,49 @@ LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
 (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count323
-\calc@Bcount=\count324
-\calc@Adimen=\dimen293
-\calc@Bdimen=\dimen294
-\calc@Askip=\skip71
-\calc@Bskip=\skip72
+\calc@Acount=\count322
+\calc@Bcount=\count323
+\calc@Adimen=\dimen286
+\calc@Bdimen=\dimen287
+\calc@Askip=\skip69
+\calc@Bskip=\skip70
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count325
-\calc@Cskip=\skip73
+\calc@Ccount=\count324
+\calc@Cskip=\skip71
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count326
-\l_MT_multwidth_dim=\dimen295
-\origjot=\skip74
-\l_MT_shortvdotswithinadjustabove_dim=\dimen296
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen297
-\l_MT_above_intertext_sep=\dimen298
-\l_MT_below_intertext_sep=\dimen299
-\l_MT_above_shortintertext_sep=\dimen300
-\l_MT_below_shortintertext_sep=\dimen301
-\xmathstrut@box=\box98
-\xmathstrut@dim=\dimen302
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/mathtools/empheq.sty
+\g_MT_multlinerow_int=\count325
+\l_MT_multwidth_dim=\dimen288
+\origjot=\skip72
+\l_MT_shortvdotswithinadjustabove_dim=\dimen289
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen290
+\l_MT_above_intertext_sep=\dimen291
+\l_MT_below_intertext_sep=\dimen292
+\l_MT_above_shortintertext_sep=\dimen293
+\l_MT_below_shortintertext_sep=\dimen294
+\xmathstrut@box=\box100
+\xmathstrut@dim=\dimen295
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/mathtools/empheq.sty
 Package: empheq 2024/08/09 v2.17 Emphasizing equations
-\l_EQ_equationtype_int=\count327
-\l_EQ_alignmentmode_int=\count328
-\l_EQ_totalwidth_dim=\dimen303
-\l_EQ_displaywidth_dim=\dimen304
-\l_EQ_temp_linewidth_dim=\dimen305
-\l_EQ_linewidth_dim=\dimen306
-\EmphEqdelimitershortfall=\dimen307
-\EmphEqdelimiterfactor=\count329
-\g_EQ_toptag_height_dim=\dimen308
-\g_EQ_bottomtag_depth_dim=\dimen309
-\g_EQ_toprow_height_dim=\dimen310
-\g_EQ_bottomrow_depth_dim=\dimen311
-\g_EQ_widesttag_dim=\dimen312
-\EQ_mathdisplay_box=\box99
-\EQ_tag_box=\box100
-\g_EQ_temprow_int=\count330
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/afterpage.sty
-Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
-\AP@output=\toks50
-\AP@partial=\box101
-\AP@footins=\box102
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/physics/physics.sty
+\l_EQ_equationtype_int=\count326
+\l_EQ_alignmentmode_int=\count327
+\l_EQ_totalwidth_dim=\dimen296
+\l_EQ_displaywidth_dim=\dimen297
+\l_EQ_temp_linewidth_dim=\dimen298
+\l_EQ_linewidth_dim=\dimen299
+\EmphEqdelimitershortfall=\dimen300
+\EmphEqdelimiterfactor=\count328
+\g_EQ_toptag_height_dim=\dimen301
+\g_EQ_bottomtag_depth_dim=\dimen302
+\g_EQ_toprow_height_dim=\dimen303
+\g_EQ_bottomrow_depth_dim=\dimen304
+\g_EQ_widesttag_dim=\dimen305
+\EQ_mathdisplay_box=\box101
+\EQ_tag_box=\box102
+\g_EQ_temprow_int=\count329
+) (./preamble/science.tex (/usr/local/texlive/2024/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/local/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2024-11-02 L3 programming layer (loader) 
@@ -553,27 +525,27 @@ File: l3backend-dvips.def 2024-05-08 L3 backend support: dvips
 \l__pdf_internal_box=\box103
 \l__pdf_backend_content_box=\box104
 \l__pdf_backend_model_box=\box105
-\g__pdf_backend_annotation_int=\count331
-\g__pdf_backend_link_int=\count332
-\g__pdf_backend_link_sf_int=\count333
+\g__pdf_backend_annotation_int=\count330
+\g__pdf_backend_link_int=\count331
+\g__pdf_backend_link_sf_int=\count332
 ))
 Package: xparse 2024-08-16 L3 Experimental document command parser
 )) (/usr/local/texlive/2024/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2024-09-30 v3.3.22 A comprehensive (SI) units package
-\l__siunitx_number_uncert_offset_int=\count334
-\l__siunitx_number_exponent_fixed_int=\count335
-\l__siunitx_number_min_decimal_int=\count336
-\l__siunitx_number_min_integer_int=\count337
-\l__siunitx_number_round_precision_int=\count338
-\l__siunitx_number_lower_threshold_int=\count339
-\l__siunitx_number_upper_threshold_int=\count340
-\l__siunitx_number_group_first_int=\count341
-\l__siunitx_number_group_size_int=\count342
-\l__siunitx_number_group_minimum_int=\count343
-\l__siunitx_angle_tmp_dim=\dimen313
+\l__siunitx_number_uncert_offset_int=\count333
+\l__siunitx_number_exponent_fixed_int=\count334
+\l__siunitx_number_min_decimal_int=\count335
+\l__siunitx_number_min_integer_int=\count336
+\l__siunitx_number_round_precision_int=\count337
+\l__siunitx_number_lower_threshold_int=\count338
+\l__siunitx_number_upper_threshold_int=\count339
+\l__siunitx_number_group_first_int=\count340
+\l__siunitx_number_group_size_int=\count341
+\l__siunitx_number_group_minimum_int=\count342
+\l__siunitx_angle_tmp_dim=\dimen306
 \l__siunitx_angle_marker_box=\box106
 \l__siunitx_angle_unit_box=\box107
-\l__siunitx_compound_count_int=\count344
+\l__siunitx_compound_count_int=\count343
 (/usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
@@ -583,28 +555,37 @@ Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode not found.
 ))
 \l__siunitx_table_tmp_box=\box108
-\l__siunitx_table_tmp_dim=\dimen314
-\l__siunitx_table_column_width_dim=\dimen315
+\l__siunitx_table_tmp_dim=\dimen307
+\l__siunitx_table_column_width_dim=\dimen308
 \l__siunitx_table_integer_box=\box109
 \l__siunitx_table_decimal_box=\box110
 \l__siunitx_table_uncert_box=\box111
 \l__siunitx_table_before_box=\box112
 \l__siunitx_table_after_box=\box113
-\l__siunitx_table_before_dim=\dimen316
-\l__siunitx_table_carry_dim=\dimen317
-\l__siunitx_unit_tmp_int=\count345
-\l__siunitx_unit_position_int=\count346
-\l__siunitx_unit_total_int=\count347
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/mhchem/mhchem.sty
+\l__siunitx_table_before_dim=\dimen309
+\l__siunitx_table_carry_dim=\dimen310
+\l__siunitx_unit_tmp_int=\count344
+\l__siunitx_unit_position_int=\count345
+\l__siunitx_unit_total_int=\count346
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen311
+\ar@mcellbox=\box114
+\extrarowheight=\dimen312
+\NC@list=\toks49
+\extratabsurround=\skip73
+\backup@length=\skip74
+\ar@cellbox=\box115
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/mhchem/mhchem.sty
 Package: mhchem 2024/01/29 v4.10 for typesetting chemical formulae
 (/usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/chemgreek/chemgreek.sty
 Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use in chemistry (CN)
-\l__chemgreek_tmpa_int=\count348
-\g__chemgreek_tmpa_int=\count349
+\l__chemgreek_tmpa_int=\count347
+\g__chemgreek_tmpa_int=\count348
 )
-\l__mhchem_ce_distanceFromLastComma_int=\count350
+\l__mhchem_ce_distanceFromLastComma_int=\count349
 \__mhchem_arrow_extPgfLength_skip=\skip75
 \mhchem@minispace@tmp=\skip76
 \mhchem@minibackspace@tmp=\skip77
@@ -615,47 +596,38 @@ Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use 
 \mhchem@smallbondwidth=\skip82
 \mhchem@bondtmp@minussidebearingleft=\skip83
 \mhchem@bondtmp@minussidebearingright=\skip84
-\l__mhchem_option_version_int=\count351
-\mhchem@option@minusmathsidebearingleft=\dimen318
-\mhchem@option@minusmathsidebearingright=\dimen319
-\mhchem@option@minustextsidebearingleft=\dimen320
-\mhchem@option@minustextsidebearingright=\dimen321
-) (/usr/local/texlive/2024/texmf-dist/tex/generic/chemfig/chemfig.sty (/usr/local/texlive/2024/texmf-dist/tex/generic/chemfig/chemfig.tex (/usr/local/texlive/2024/texmf-dist/tex/generic/simplekv/simplekv.tex
+\l__mhchem_option_version_int=\count350
+\mhchem@option@minusmathsidebearingleft=\dimen313
+\mhchem@option@minusmathsidebearingright=\dimen314
+\mhchem@option@minustextsidebearingleft=\dimen315
+\mhchem@option@minustextsidebearingright=\dimen316
+)) (/usr/local/texlive/2024/texmf-dist/tex/generic/chemfig/chemfig.sty (/usr/local/texlive/2024/texmf-dist/tex/generic/chemfig/chemfig.tex (/usr/local/texlive/2024/texmf-dist/tex/generic/simplekv/simplekv.tex
 Package: simplekv 2023/10/02 v0.2c Simple keyval package (CT)
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen322
-\pgfarrowlength=\dimen323
-\pgfarrowwidth=\dimen324
-\pgfarrowlinewidth=\dimen325
+\pgfarrowinset=\dimen317
+\pgfarrowlength=\dimen318
+\pgfarrowwidth=\dimen319
+\pgfarrowlinewidth=\dimen320
 )
-\CF_cnt_atomgroup=\count352
-\CF_cnt_group=\count353
-\CF_cnt_atom=\count354
-\CF_cnt_cycle=\count355
-\CF_cnt_cyclebonds=\count356
-\CF_cnt_compound=\count357
-\CF_dim=\dimen326
-\CF_turnangle=\dimen327
-\CF_arrowsize=\dimen328
-\CF_zero=\dimen329
-\CF_box=\box114
-\CF_boxstuff=\box115
-\CF_testbox=\box116
-\CF_chargebox=\box117
-\CF_substtoks=\toks51
+\CF_cnt_atomgroup=\count351
+\CF_cnt_group=\count352
+\CF_cnt_atom=\count353
+\CF_cnt_cycle=\count354
+\CF_cnt_cyclebonds=\count355
+\CF_cnt_compound=\count356
+\CF_dim=\dimen321
+\CF_turnangle=\dimen322
+\CF_arrowsize=\dimen323
+\CF_zero=\dimen324
+\CF_box=\box116
+\CF_boxstuff=\box117
+\CF_testbox=\box118
+\CF_chargebox=\box119
+\CF_substtoks=\toks50
 )
 Package: chemfig 2023/12/28 v1.66 Draw molecule with an easy syntax (CT)
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count358
-\float@exts=\toks52
-\float@box=\box118
-\@float@everytoks=\toks53
-\@floatcapt=\box119
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/comment/comment.sty
-\CommentStream=\write4
-Excluding comment 'comment') (/usr/local/texlive/2024/texmf-dist/tex/platex/japanese-otf/otf.sty
+) (./preamble/otf.tex) (/usr/local/texlive/2024/texmf-dist/tex/platex/japanese-otf/otf.sty
 Package: otf 2023/10/09 TeX JP org, v1.7b8 psitau, u0.30 ttk
 LaTeX Font Info:    Redeclaring symbol font `mincho' on input line 345.
 LaTeX Font Info:    Overwriting symbol font `mincho' in version `normal'
@@ -673,11 +645,36 @@ LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
 (Font)                  JY1/hgt/m/n --> JY1/hgt/bx/n on input line 349.
 (/usr/local/texlive/2024/texmf-dist/tex/platex/japanese-otf/ajmacros.sty
 Package: ajmacros 2019/04/01 21:00 iNOUE Koich! <inoue@ma.ns.musashi-tech.ac.jp>
-\@tempcntc=\count359
-\@tempcntd=\count360
-\@tempcnte=\count361
-\@tempcntf=\count362
-)) (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
+\@tempcntc=\count357
+\@tempcntd=\count358
+\@tempcnte=\count359
+\@tempcntf=\count360
+)) (./preamble/okudsuke.tex (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen325
+\TX@old@table=\dimen326
+\TX@old@col=\dimen327
+\TX@target=\dimen328
+\TX@delta=\dimen329
+\TX@cols=\count361
+\TX@ftn=\toks51
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/mathalpha/mathalfa.sty) (/usr/local/texlive/2024/texmf-dist/tex/latex/mathalpha/mathalpha.sty
+Package: mathalpha 2021/11/18 - 1.143mathalpha (License LPPL) Michael Sharpe
+`mathalpha' v1.143, 2021/11/18, a renaming of mathalfa (msharpe) (/usr/local/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks52
+\XKV@tempa@toks=\toks53
+)
+\XKV@depth=\count362
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+LaTeX Font Info:    Overwriting math alphabet `\mathbb' in version `bold'
+(Font)                  U/BOONDOX-ds/m/n --> U/BOONDOX-ds/b/n on input line 209.
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 554.
+LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `bold'
+(Font)                  U/BOONDOX-calo/m/n --> U/BOONDOX-calo/b/n on input line 556.
+)) (./preamble/hyperref.tex (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
 (/usr/local/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
@@ -800,8 +797,8 @@ File: pxjahyper-uni.def 2024/08/25 v1.5
 )
 Package pxjahyper Info: The setup for hyperref 'unicode' is applied.
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 154.
-)
+Package hyperref Info: Option `colorlinks' set `true' on input line 26.
+))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 6.
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
 (Font)              scaled to size 9.24683pt on input line 6.
@@ -856,8 +853,8 @@ Package chemgreek Info: Activating mapping `default' on line 6.
 
 Package hyperref Info: Link coloring ON on input line 6.
 (out/main.out) (out/main.out)
-\@outlinefile=\write5
-\openout5 = `main.out'.
+\@outlinefile=\write4
+\openout4 = `main.out'.
 
 (./Title/title.tex (./Title/define_includefullgraphics.tex
 \BackGroundUnit=\box121
@@ -882,9 +879,9 @@ LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
 
 
 LaTeX Font Info:    Font shape `JT1/hmc/bx/n' will be
-(Font)              scaled to size 9.24683pt on input line 29.
+(Font)              scaled to size 9.24683pt on input line 42.
 LaTeX Font Info:    Font shape `JY1/hmc/bx/n' will be
-(Font)              scaled to size 9.24683pt on input line 29.
+(Font)              scaled to size 9.24683pt on input line 42.
 [1
 
 ]) (./TOC/TOC_style (./TOC/TOC_Part.tex))
@@ -914,8 +911,8 @@ LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
 (Font)              scaled to size 11.09619pt on input line 1.
 )
-\tf@toc=\write6
-\openout6 = `main.toc'.
+\tf@toc=\write5
+\openout5 = `main.toc'.
 
 
 
@@ -975,7 +972,7 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{4.80005pt}.
 
 [5]
-Overfull \hbox (0.18481pt too wide) in paragraph at lines 13--13
+Overfull \hbox (0.18481pt too wide) in paragraph at lines 12--12
  |[]  
  []
 
@@ -1008,53 +1005,16 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 
 ]
 
-[10] (./Articles/combine/Combine_Mochidsuki_uncertainty.tex
-Overfull \hbox (0.18481pt too wide) in paragraph at lines 9--9
+[10] (./Articles/combine/Combine_sample3.tex
+Overfull \hbox (0.18481pt too wide) in paragraph at lines 11--11
  |[]  
  []
 
-(./Articles/Mochidsuki_uncertainty/Quantum Measurement and Uncertainty Relations_Shota Mochizuki.tex
+(./Articles/sample3/sample3.tex
 
 [11
 
 ]
-LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 6.47278pt on input line 23.
-LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 4.62341pt on input line 23.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
-(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
-(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 23.
-(/usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 23.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 23.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 4.805pt on input line 23.
-LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 6.47278pt on input line 23.
-LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 23.
-LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 23.
-LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 5.5481pt on input line 23.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 23.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 23.
-LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 5.5481pt on input line 23.
-
 
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
@@ -1062,110 +1022,30 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{16.0pt}.
 
 [12]
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 4.80005pt, for example:
-(fancyhdr)                \setlength{\footskip}{4.80005pt}.
-
-[13]
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 16.0pt, for example:
-(fancyhdr)                \setlength{\footskip}{16.0pt}.
-
-[14]
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 4.80005pt, for example:
-(fancyhdr)                \setlength{\footskip}{4.80005pt}.
-
-[15]
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 16.0pt, for example:
-(fancyhdr)                \setlength{\footskip}{16.0pt}.
-
-[16]
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 4.80005pt, for example:
-(fancyhdr)                \setlength{\footskip}{4.80005pt}.
-
-[17]
-LaTeX Font Info:    Kanji font shape `JY1/hmc/m/it' undefined
-(Font)              No change on input line 154.
-LaTeX Font Info:    Font shape `U/BOONDOX-ds/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 161.
-LaTeX Font Info:    Font shape `U/BOONDOX-ds/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 161.
-LaTeX Font Info:    Font shape `U/BOONDOX-ds/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 161.
-LaTeX Font Info:    Font shape `U/BOONDOX-ds/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 161.
-LaTeX Font Info:    Font shape `U/BOONDOX-ds/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 161.
-
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 16.0pt, for example:
-(fancyhdr)                \setlength{\footskip}{16.0pt}.
-
-[18]
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 4.80005pt, for example:
-(fancyhdr)                \setlength{\footskip}{4.80005pt}.
-
-[19]
-Overfull \hbox (6.65057pt too wide) in paragraph at lines 191--193
-\JY1/hmc/m/n/10 この式からわかるように\OT1/cmr/m/n/10 , \JY1/hmc/m/n/10 測定結果の標準偏差の積 $[][]$
- []
-
-
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 16.0pt, for example:
-(fancyhdr)                \setlength{\footskip}{16.0pt}.
-
-[20]
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 4.80005pt, for example:
-(fancyhdr)                \setlength{\footskip}{4.80005pt}.
-
-[21]
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 16.0pt, for example:
-(fancyhdr)                \setlength{\footskip}{16.0pt}.
-
-[22] (./Articles/Mochidsuki_uncertainty/部誌付録_望月.tex
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 4.80005pt, for example:
-(fancyhdr)                \setlength{\footskip}{4.80005pt}.
-
-[23]
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 16.0pt, for example:
-(fancyhdr)                \setlength{\footskip}{16.0pt}.
-
-[24]
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 6.47278pt on input line 82.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 4.62341pt on input line 82.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 82.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 82.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 82.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 82.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 82.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 4.805pt on input line 82.
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 4.62341pt on input line 42.
+(Font)              scaled to size 6.47278pt on input line 82.
 
 
 
@@ -1173,68 +1053,21 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                Make it at least 4.80005pt, for example:
 (fancyhdr)                \setlength{\footskip}{4.80005pt}.
 
-[25]
+[13]))
 
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 16.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{16.0pt}.
 
-[26]
-LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 10.0pt on input line 84.
-LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 7.0pt on input line 84.
-LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 5.0pt on input line 84.
-
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 4.80005pt, for example:
-(fancyhdr)                \setlength{\footskip}{4.80005pt}.
-
-[27]
-LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 8.0pt on input line 98.
-LaTeX Font Info:    Font shape `U/BOONDOX-calo/m/n' will be
-(Font)              scaled to size 6.0pt on input line 98.
-
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 16.0pt, for example:
-(fancyhdr)                \setlength{\footskip}{16.0pt}.
-
-[28]
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 4.80005pt, for example:
-(fancyhdr)                \setlength{\footskip}{4.80005pt}.
-
-[29])
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 16.0pt, for example:
-(fancyhdr)                \setlength{\footskip}{16.0pt}.
-
-[30]))
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 4.80005pt, for example:
-(fancyhdr)                \setlength{\footskip}{4.80005pt}.
-
-[31] (./Okudsuke/okudsuke.tex
+[14] (./Okudsuke/okudsuke.tex
 Underfull \hbox (badness 10000) in alignment at lines 19--19
 [][] 
  []
 
 )
 
-[32
+[15
 
 ] (out/main.aux)
  ***********
@@ -1243,15 +1076,15 @@ LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7C250ACEBEEE2801ECEDBC982B32E76D;778.
+(rerunfilecheck)             Checksum: D6253768404411CA3CAA50B16E9AE798;799.
  ) 
 Here is how much of TeX's memory you used:
- 36256 strings out of 474021
- 740378 string characters out of 5736109
- 1140278 words of memory out of 5000000
- 58766 multiletter control sequences out of 15000+600000
- 636939 words of font info for 161 fonts, out of 8000000 for 9000
+ 36164 strings out of 474021
+ 738476 string characters out of 5736109
+ 1129201 words of memory out of 5000000
+ 58681 multiletter control sequences out of 15000+600000
+ 628845 words of font info for 124 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 103i,16n,104p,981b,1398s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,11n,107p,682b,1407s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/main.dvi (38 pages, 128264 bytes).
+Output written on out/main.dvi (21 pages, 48276 bytes).

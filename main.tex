@@ -1,6 +1,6 @@
 \documentclass[a5paper,openary]{jsbook}%book用
 
-\input{preamble_p_book.tex}
+\input{preamble/preamble.tex}
 
 
 \begin{document}
@@ -23,19 +23,17 @@
 \mainmatter
 \input{Articles/articles_style.tex}
 
-\part{活動紹介}\label{Part:Katsudo}
+\part{活動紹介}
 \input{Articles/combine/Combine_sample.tex}
 \input{Articles/combine/Combine_sample2.tex}
 
-%奇数ページスタートのために手動で調節...
+%partの奇数ページスタートは手動で調節してください...
 % \afterpage{\blankpage}
 
-\part{個人記事}\label{Part:KOJIN}
-
-\input{Articles/combine/Combine_Mochidsuki_uncertainty.tex}
+\part{個人記事}
+\input{Articles/combine/Combine_sample3.tex}
 
 \backmatter
-
 \input{Okudsuke/okudsuke.tex}
 
 \end{document}

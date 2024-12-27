@@ -4,22 +4,10 @@
 \contentsline {section}{\numberline {1}サンプル}{6}{section.8}%
 \contentsline {section}{\numberline {2}サンプル？}{7}{section.9}%
 \contentsline {part}{第II部\hspace {1zw}個人記事}{9}{part.10}%
-\contentsline {chapter}{量子測定と不確定性関係}{11}{section*.11}%
-\contentsline {section}{\numberline {1}まえがき}{11}{section.13}%
-\contentsline {section}{\numberline {2}量子測定理論}{12}{section.14}%
-\contentsline {subsection}{\numberline {2.1}射影測定}{12}{subsection.15}%
-\contentsline {subsection}{\numberline {2.2}間接測定とPOVM}{13}{subsection.18}%
-\contentsline {subsection}{\numberline {2.3}測定に伴う誤差と反作用}{15}{subsection.24}%
-\contentsline {subsubsection}{\numberline {2.3.1}測定誤差}{15}{subsubsection.25}%
-\contentsline {subsubsection}{\numberline {2.3.2}測定による反作用}{17}{subsubsection.26}%
-\contentsline {section}{\numberline {3}不確定性関係}{17}{section.27}%
-\contentsline {subsection}{\numberline {3.1}ケナード・ロバートソンの不確定性関係}{17}{subsection.28}%
-\contentsline {subsection}{\numberline {3.2}不偏性条件が成立するときの不確定性関係}{19}{subsection.30}%
-\contentsline {subsubsection}{\numberline {3.2.1}アーサー・ケリー・グッドマンの不確定性関係}{19}{subsubsection.31}%
-\contentsline {subsubsection}{\numberline {3.2.2}測定誤差と反作用の不確定性関係}{20}{subsubsection.32}%
-\contentsline {subsection}{\numberline {3.3}小澤の不等式}{21}{subsection.33}%
-\contentsline {section}{\numberline {4}付録 量子力学の基礎}{23}{section.35}%
-\contentsline {subsection}{\numberline {4.1}量子力学における状態と物理量}{24}{subsection.36}%
-\contentsline {subsection}{\numberline {4.2}混合状態と密度演算子}{26}{subsection.40}%
-\contentsline {subsection}{\numberline {4.3}合成系の状態}{27}{subsection.43}%
-\contentsline {subsection}{\numberline {4.4}量子系の時間発展}{29}{subsection.45}%
+\contentsline {chapter}{サンプル3(デフォルト想定)}{11}{section*.11}%
+\contentsline {section}{\numberline {1}サンプル}{11}{section.13}%
+\contentsline {subsection}{\numberline {1.1}サンプル！}{11}{subsection.14}%
+\contentsline {subsubsection}{\numberline {1.1.1}サンプル...！}{11}{subsubsection.15}%
+\contentsline {subsection}{\numberline {1.2}サンプル！！！}{12}{subsection.16}%
+\contentsline {section}{\numberline {2}サンプル？}{12}{section.17}%
+\contentsline {subsection}{\numberline {2.1}サンプル...}{13}{subsection.18}%
